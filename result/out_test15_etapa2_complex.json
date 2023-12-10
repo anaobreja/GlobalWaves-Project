@@ -4920,7 +4920,7 @@
   "command" : "shuffle",
   "user" : "alice22",
   "timestamp" : 5429,
-  "message" : "The loaded source is not a playlist."
+  "message" : "The loaded source is not a playlist or an album."
 }, {
   "user" : "jacobdean",
   "command" : "removeAlbum",
@@ -5019,7 +5019,7 @@
   "command" : "shuffle",
   "user" : "bob35",
   "timestamp" : 5740,
-  "message" : "The loaded source is not a playlist."
+  "message" : "The loaded source is not a playlist or an album."
 }, {
   "user" : "leslie27",
   "command" : "removeAlbum",
@@ -5123,7 +5123,7 @@
   "command" : "shuffle",
   "user" : "carol19",
   "timestamp" : 6051,
-  "message" : "The loaded source is not a playlist."
+  "message" : "The loaded source is not a playlist or an album."
 }, {
   "user" : "cbutler",
   "command" : "removeAlbum",
@@ -5321,7 +5321,7 @@
   "command" : "shuffle",
   "user" : "emily30",
   "timestamp" : 6673,
-  "message" : "The loaded source is not a playlist."
+  "message" : "The loaded source is not a playlist or an album."
 }, {
   "user" : "jacobdean",
   "command" : "removeAlbum",
@@ -5420,7 +5420,7 @@
   "command" : "shuffle",
   "user" : "frank21",
   "timestamp" : 6984,
-  "message" : "The loaded source is not a playlist."
+  "message" : "The loaded source is not a playlist or an album."
 }, {
   "user" : "amanda16",
   "command" : "removeAlbum",
@@ -5519,7 +5519,7 @@
   "command" : "shuffle",
   "user" : "grace25",
   "timestamp" : 7295,
-  "message" : "The loaded source is not a playlist."
+  "message" : "The loaded source is not a playlist or an album."
 }, {
   "user" : "barmstrong",
   "command" : "removeAlbum",
@@ -5618,7 +5618,7 @@
   "command" : "shuffle",
   "user" : "henry26",
   "timestamp" : 7606,
-  "message" : "The loaded source is not a playlist."
+  "message" : "The loaded source is not a playlist or an album."
 }, {
   "user" : "amanda16",
   "command" : "removeAlbum",
@@ -5717,7 +5717,7 @@
   "command" : "shuffle",
   "user" : "irene33",
   "timestamp" : 7917,
-  "message" : "The loaded source is not a playlist."
+  "message" : "The loaded source is not a playlist or an album."
 }, {
   "user" : "jacobdean",
   "command" : "removeAlbum",
@@ -5816,7 +5816,7 @@
   "command" : "shuffle",
   "user" : "jack29",
   "timestamp" : 8228,
-  "message" : "The loaded source is not a playlist."
+  "message" : "The loaded source is not a playlist or an album."
 }, {
   "user" : "cbutler",
   "command" : "removeAlbum",
@@ -26035,7 +26035,7 @@
 }, {
   "command" : "getAllUsers",
   "timestamp" : 14849,
-  "result" : [ "alice22", "bob35", "carol19", "david27", "emily30", "frank21", "grace25", "henry26", "irene33", "jack29", "barmstrong", "matthewporter", "amanda16", "cbutler", "jacobdean", "matthewfernandez", "leslie27" ]
+  "result" : [ "alice22", "bob35", "carol19", "david27", "emily30", "frank21", "grace25", "henry26", "irene33", "jack29", "barmstrong", "matthewporter", "amanda16", "cbutler", "jacobdean", "matthewfernandez", "leslie27", "nancymontgomery", "conniealvarez", "jenningsbeth", "charlesgarcia" ]
 }, {
   "command" : "getTop5Playlists",
   "timestamp" : 14849,

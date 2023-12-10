@@ -227,7 +227,7 @@ public class NormalUser extends User {
         }
 
         if (!player.getType().equals("playlist")) {
-            return "The loaded source is not a playlist.";
+            return "The loaded source is not a playlist or an album.";
         }
 
         if (!online) {

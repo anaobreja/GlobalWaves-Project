@@ -5287,7 +5287,7 @@
   "command" : "shuffle",
   "user" : "emily30",
   "timestamp" : 6674,
-  "message" : "The loaded source is not a playlist."
+  "message" : "The loaded source is not a playlist or an album."
 }, {
   "user" : "jacobdean",
   "command" : "removeAlbum",
@@ -5386,7 +5386,7 @@
   "command" : "shuffle",
   "user" : "frank21",
   "timestamp" : 6985,
-  "message" : "The loaded source is not a playlist."
+  "message" : "The loaded source is not a playlist or an album."
 }, {
   "user" : "jacobdean",
   "command" : "removeAlbum",
@@ -5485,7 +5485,7 @@
   "command" : "shuffle",
   "user" : "grace25",
   "timestamp" : 7296,
-  "message" : "The loaded source is not a playlist."
+  "message" : "The loaded source is not a playlist or an album."
 }, {
   "user" : "jsimpson",
   "command" : "removeAlbum",
@@ -5683,7 +5683,7 @@
   "command" : "shuffle",
   "user" : "irene33",
   "timestamp" : 7918,
-  "message" : "The loaded source is not a playlist."
+  "message" : "The loaded source is not a playlist or an album."
 }, {
   "user" : "mccarthyluis",
   "command" : "removeAlbum",
@@ -25954,7 +25954,7 @@
 }, {
   "command" : "getAllUsers",
   "timestamp" : 14850,
-  "result" : [ "alice22", "bob35", "carol19", "david27", "emily30", "frank21", "grace25", "henry26", "irene33", "jack29", "jsimpson", "mccarthyluis", "glester", "anthony22", "jacobdean", "amanda16", "cbutler" ]
+  "result" : [ "alice22", "bob35", "carol19", "david27", "emily30", "frank21", "grace25", "henry26", "irene33", "jack29", "jsimpson", "mccarthyluis", "glester", "anthony22", "jacobdean", "amanda16", "cbutler", "barmstrong", "charlesgarcia", "john99", "jenningsbeth", "fwebb", "matthewporter" ]
 }, {
   "command" : "getTop5Playlists",
   "timestamp" : 14850,

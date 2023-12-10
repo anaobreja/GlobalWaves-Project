@@ -137,7 +137,7 @@
   "user" : "melodymaster",
   "command" : "removeAlbum",
   "timestamp" : 430,
-  "message" : "melodymaster deleted the album."
+  "message" : "melodymaster doesn't have a podcast with the given name."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -179,7 +179,7 @@
   "command" : "shuffle",
   "user" : "bob35",
   "timestamp" : 440,
-  "message" : "The loaded source is not a playlist."
+  "message" : "The loaded source is not a playlist or an album."
 }, {
   "command" : "status",
   "user" : "bob35",

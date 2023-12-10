@@ -225,6 +225,10 @@ public final class Admin {
             users.add(artist.getName());
         }
 
+        for(Host host : hosts) {
+            users.add(host.getName());
+        }
+
         return users;
     }
 
@@ -303,14 +307,32 @@ public final class Admin {
                     return username + " can't be deleted.";
                 }
             }
+
+            if (userAux.getPageOwner() != null && userAux.getPageOwner().equals(username))
+                return username + " can't be deleted.";
+        }
+
+
+
+        NormalUser userAux = null;
+
+        for (NormalUser user : normalUsers) {
+            if (user.getName().equals(username)) {
+                userAux = user;
+
+            }
         }
 
         for (NormalUser normalUser : normalUsers) {
             normalUser.getLikedSongs().removeIf(song -> song.getArtist().equals(username));
-//            normalUser.getFollowedPlaylists().stream().filter(playlist ->
-//                    playlist.getOwner().equals(username)).forEach(Playlist::decreaseFollowers);
             normalUser.getFollowedPlaylists().removeIf(playlist -> playlist.getOwner().equals(username));
-
+            if (userAux != null)
+            for (Playlist playlist : userAux.getFollowedPlaylists()) {
+                for (Playlist followedPlaylist : normalUser.getPlaylists()) {
+                    if (playlist.getName().equals(followedPlaylist.getName()))
+                        playlist.decreaseFollowers();
+                }
+            }
         }
 
         songs.removeIf(song -> song.getArtist().equals(username));
@@ -333,14 +355,6 @@ public final class Admin {
 
 
 
-        for (NormalUser user : normalUsers) {
-            if (user.getName().equals(username)) {
-                userToDelete = user;
-                normalUsers.remove(userToDelete);
-            }
-
-            return username + " was successfully deleted.";
-        }
 
         for (Artist artist : artists) {
             if (artist.getName().equals(username)) {
@@ -350,8 +364,22 @@ public final class Admin {
             return username + " was successfully deleted.";
         }
 
-        //host
-        return username + " was successfully deleted.";
+        for (NormalUser user : normalUsers) {
+            if (user.getName().equals(username)) {
+                userToDelete = user;
+                normalUsers.remove(userToDelete);
+            }
+            return username + " was successfully deleted.";
+        }
+
+        for (Host host : hosts) {
+            if (host.getName().equals(username)) {
+                userToDelete = host;
+                hosts.remove(userToDelete);
+            }
+            return username + " was successfully deleted.";
+        }
+        return null;
     }
 
     /**

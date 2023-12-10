@@ -1,10 +1,7 @@
 package app.user;
 
 import app.Admin;
-import app.audio.Collections.Album;
-import app.audio.Collections.AudioCollection;
-import app.audio.Collections.Event;
-import app.audio.Collections.Merch;
+import app.audio.Collections.*;
 import app.audio.Files.AudioFile;
 import app.audio.Files.Episode;
 import app.audio.Files.Song;
@@ -93,6 +90,18 @@ public class Artist extends User {
                     return username + " can't delete this album.";
                 }
             }
+        }
+
+        boolean hasAlbum = false;
+        for(Album albumAux : artistPage.getAlbums()) {
+            if (albumAux.getName().equals(name)) {
+                hasAlbum = true;
+                break;
+            }
+        }
+
+        if (!hasAlbum){
+            return username + " doesn't have a podcast with the given name.";
         }
 
         Admin.getAlbums().removeIf(album -> album.getName().equals(name));
