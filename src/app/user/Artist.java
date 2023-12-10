@@ -2,11 +2,14 @@ package app.user;
 
 import app.Admin;
 import app.audio.Collections.Album;
+import app.audio.Collections.AudioCollection;
 import app.audio.Collections.Event;
 import app.audio.Collections.Merch;
+import app.audio.Files.AudioFile;
 import app.audio.Files.Episode;
 import app.audio.Files.Song;
 import app.page.ArtistPage;
+import app.player.PlayerSource;
 import fileio.input.EpisodeInput;
 import fileio.input.SongInput;
 import lombok.Getter;
@@ -76,6 +79,30 @@ public class Artist extends User {
 
 
         return owner + " has added new album successfully.";
+    }
+
+    public String removeAlbum(String name, String username) {
+        for (NormalUser userAux : Admin.getNormalUsers() ) {
+            PlayerSource source = userAux.getPlayer().getSource();
+
+            if (source != null) {
+                AudioFile audioFile = source.getAudioFile();
+
+                if ((audioFile != null && audioFile.getAlbum() != null
+                                &&audioFile.getAlbum().equals(name))) {
+                    return username + " can't delete this album.";
+                }
+            }
+        }
+
+        Admin.getAlbums().removeIf(album -> album.getName().equals(name));
+
+        Artist user = Admin.getArtist(username);
+
+        assert user != null;
+        user.getArtistPage().getAlbums().removeIf(album -> album.getName().equals(name));
+
+        return username + " deleted the album.";
     }
 
 

@@ -15,4 +15,9 @@ public final class Episode extends AudioFile {
     public String getArtist() {
         return null;
     }
+
+    @Override
+    public Object getAlbum() {
+        return null;
+    }
 }

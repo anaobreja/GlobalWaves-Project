@@ -2,8 +2,11 @@ package app.audio.Collections;
 
 import app.audio.Files.AudioFile;
 import app.audio.Files.Episode;
+import lombok.Getter;
+
 import java.util.List;
 
+@Getter
 public final class Podcast extends AudioCollection {
     private final List<Episode> episodes;
 

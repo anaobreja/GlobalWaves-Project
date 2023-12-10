@@ -13,4 +13,6 @@ public abstract class AudioFile extends LibraryEntry {
     }
 
     public abstract String getArtist();
+
+    public abstract Object getAlbum();
 }

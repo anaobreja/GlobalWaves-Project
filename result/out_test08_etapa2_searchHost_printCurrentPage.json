@@ -34,8 +34,8 @@
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 50,
-  "message" : "Search returned 2 results",
-  "results" : [ "soundseeker", "soundseeker" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "soundseeker" ]
 }, {
   "user" : "soundseeker",
   "command" : "addPodcast",
@@ -52,6 +52,17 @@
   "timestamp" : 53,
   "message" : "soundseeker has added new podcast successfully."
 }, {
+  "command" : "showPodcasts",
+  "user" : "soundseeker",
+  "timestamp" : 53,
+  "result" : [ {
+    "episodes" : [ "Exploring Sonic Landscapes", "The Future of Music Technology", "Cultural Beats" ],
+    "name" : "Auditory Adventures"
+  }, {
+    "episodes" : [ "The Roots of Blues", "Classical Music's Modern Impact", "Jazz Journeys", "The Folk Revival" ],
+    "name" : "Harmony & History"
+  } ]
+}, {
   "user" : "jack29",
   "command" : "printCurrentPage",
   "timestamp" : 53,
@@ -65,7 +76,7 @@
   "command" : "select",
   "user" : "jack29",
   "timestamp" : 57,
-  "message" : "Successfully selected soundseeker."
+  "message" : "Successfully selected soundseeker's page."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -77,6 +88,11 @@
   "user" : "alice22",
   "timestamp" : 65,
   "message" : "Successfully selected TED Radio Hour."
+}, {
+  "user" : "alice22",
+  "command" : "addAnnouncement",
+  "timestamp" : 67,
+  "message" : "alice22 is not a host."
 }, {
   "command" : "load",
   "user" : "alice22",
@@ -93,6 +109,11 @@
     "shuffle" : false,
     "paused" : false
   }
+}, {
+  "user" : "soundseeker",
+  "command" : "addAnnouncement",
+  "timestamp" : 74,
+  "message" : "soundseeker has successfully added new announcement."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -124,7 +145,7 @@
   "user" : "jack29",
   "command" : "printCurrentPage",
   "timestamp" : 90,
-  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
+  "message" : "Podcasts:\n\t[Auditory Adventures:\n\t[Exploring Sonic Landscapes - Journey through the world's most unique auditory experiences., The Future of Music Technology - A look into the innovations shaping the future of music production and listening., Cultural Beats - An exploration of how different cultures influence music genres.]\n, Harmony & History:\n\t[The Roots of Blues - Tracing the origins and evolution of blues music., Classical Music's Modern Impact - Discussing how classical music continues to influence contemporary artists., Jazz Journeys - Exploring the rich history and vibrant present of jazz music., The Folk Revival - Examining the resurgence of folk music in modern times.]\n]\n\nAnnouncements:\n\t[Announcement1:\n\tPrimul anunt adaugat!\n]"
 }, {
   "command" : "playPause",
   "user" : "alice22",
@@ -174,6 +195,11 @@
   "timestamp" : 3230,
   "message" : "Successfully added to playlist."
 }, {
+  "user" : "soundseeker",
+  "command" : "removePodcast",
+  "timestamp" : 3233,
+  "message" : "soundseeker doesn't have a podcast with the given name."
+}, {
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 3235,
@@ -184,6 +210,11 @@
   "user" : "alice22",
   "timestamp" : 3240,
   "message" : "Successfully selected Happier."
+}, {
+  "user" : "soundseeker",
+  "command" : "removePodcast",
+  "timestamp" : 3243,
+  "message" : "soundseeker deleted the podcast successfully."
 }, {
   "command" : "load",
   "user" : "alice22",
@@ -204,6 +235,14 @@
   "user" : "magichost",
   "timestamp" : 3247,
   "message" : "The username magichost is already taken."
+}, {
+  "command" : "showPodcasts",
+  "user" : "soundseeker",
+  "timestamp" : 3250,
+  "result" : [ {
+    "episodes" : [ "Exploring Sonic Landscapes", "The Future of Music Technology", "Cultural Beats" ],
+    "name" : "Auditory Adventures"
+  } ]
 }, {
   "command" : "follow",
   "user" : "david27",

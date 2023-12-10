@@ -16,18 +16,41 @@ public class LikedContentPage extends Page {
 
     @Override
     public String showPage() {
-        StringBuilder songsStringBuilder = new StringBuilder("Liked songs:\n\t[");
-        for (Song song : likedSongs) {
-            songsStringBuilder.append(song.getName()).append(", ");
+        StringBuilder songsStringBuilder = new StringBuilder("Liked songs:\n\t");
+        if (likedSongs.isEmpty()) {
+            songsStringBuilder.append("[]\n\n");
+        } else {
+            songsStringBuilder.append("[");
+            for (int i = 0; i < likedSongs.size(); i++) {
+                Song song = likedSongs.get(i);
+                songsStringBuilder.append(song.getName());
+                songsStringBuilder.append(" - ");
+                songsStringBuilder.append(song.getArtist());
+                if (i < likedSongs.size() - 1) {
+                    songsStringBuilder.append(", ");
+                }
+            }
+            songsStringBuilder.append("]\n\n");
         }
-        songsStringBuilder.append("]\n\n");
 
-        StringBuilder playlistsStringBuilder = new StringBuilder("Followed playlists:\n\t[");
-        for (Playlist playlist : followedPlaylists) {
-            playlistsStringBuilder.append(playlist.getName()).append(", ");
+        StringBuilder playlistsStringBuilder = new StringBuilder("Followed playlists:\n\t");
+        if (followedPlaylists.isEmpty()) {
+            playlistsStringBuilder.append("[]");
+        } else {
+            playlistsStringBuilder.append("[");
+            for (int i = 0; i < followedPlaylists.size(); i++) {
+                Playlist playlist = followedPlaylists.get(i);
+                playlistsStringBuilder.append(playlist.getName());
+                playlistsStringBuilder.append(" - ");
+                playlistsStringBuilder.append(playlist.getOwner());
+                if (i < followedPlaylists.size() - 1) {
+                    playlistsStringBuilder.append(", ");
+                }
+            }
+            playlistsStringBuilder.append("]");
         }
-        playlistsStringBuilder.append("]");
 
         return songsStringBuilder.toString() + playlistsStringBuilder.toString();
     }
+
 }

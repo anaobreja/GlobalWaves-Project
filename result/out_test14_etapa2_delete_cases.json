@@ -176,7 +176,7 @@
   "command" : "select",
   "user" : "soundseeker21",
   "timestamp" : 630,
-  "message" : "Successfully selected audiosage."
+  "message" : "Successfully selected audiosage's page."
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -215,6 +215,11 @@
   "timestamp" : 930,
   "message" : "audiosage was successfully deleted."
 }, {
+  "user" : "soundseeker21",
+  "command" : "changePage",
+  "timestamp" : 955,
+  "message" : "soundseeker21 accessed Home successfully."
+}, {
   "command" : "deleteUser",
   "user" : "melodicwanderer",
   "timestamp" : 960,
@@ -229,6 +234,11 @@
   "user" : "sonicpainter",
   "timestamp" : 975,
   "message" : "sonicpainter can't be deleted."
+}, {
+  "user" : "musicmaven",
+  "command" : "removePodcast",
+  "timestamp" : 980,
+  "message" : "musicmaven can't delete this podcast."
 }, {
   "command" : "deleteUser",
   "user" : "audiosage",
@@ -275,6 +285,11 @@
   "timestamp" : 7860,
   "message" : "sonicpainter was successfully deleted."
 }, {
+  "user" : "david27",
+  "command" : "changePage",
+  "timestamp" : 7885,
+  "message" : "david27 accessed Home successfully."
+}, {
   "command" : "deleteUser",
   "user" : "sonicpainter",
   "timestamp" : 7890,
@@ -283,5 +298,5 @@
   "user" : "bob35",
   "command" : "printCurrentPage",
   "timestamp" : 7900,
-  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[Playlist bengos]"
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 } ]

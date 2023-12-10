@@ -29,6 +29,7 @@ import java.util.List;
 public final class Admin {
     @Getter
     private static List<String> names = new ArrayList<>();
+    @Getter
     private static List<NormalUser> normalUsers = new ArrayList<>();
     @Getter
     @Setter
@@ -287,7 +288,7 @@ public final class Admin {
     }
 
     public static String deleteUser(String username) {
-        User userToDelete;
+        User userToDelete = null;
 
         for (NormalUser userAux : normalUsers) {
             PlayerSource source = userAux.getPlayer().getSource();
@@ -304,11 +305,15 @@ public final class Admin {
             }
         }
 
-        songs.removeIf(song -> song.getArtist().equals(username));
-
         for (NormalUser normalUser : normalUsers) {
             normalUser.getLikedSongs().removeIf(song -> song.getArtist().equals(username));
+//            normalUser.getFollowedPlaylists().stream().filter(playlist ->
+//                    playlist.getOwner().equals(username)).forEach(Playlist::decreaseFollowers);
+            normalUser.getFollowedPlaylists().removeIf(playlist -> playlist.getOwner().equals(username));
+
         }
+
+        songs.removeIf(song -> song.getArtist().equals(username));
 
         Iterator<String> iterator = names.iterator();
         String userName = null;
@@ -333,6 +338,7 @@ public final class Admin {
                 userToDelete = user;
                 normalUsers.remove(userToDelete);
             }
+
             return username + " was successfully deleted.";
         }
 
@@ -354,6 +360,7 @@ public final class Admin {
     public static void reset() {
         normalUsers = new ArrayList<>();
         artists = new ArrayList<>();
+        hosts = new ArrayList<>();
         names = new ArrayList<>();
         songs = new ArrayList<>();
         podcasts = new ArrayList<>();

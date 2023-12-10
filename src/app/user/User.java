@@ -1,6 +1,7 @@
 package app.user;
 
 
+import app.audio.Collections.Playlist;
 import app.audio.LibraryEntry;
 import lombok.Getter;
 import lombok.Setter;
@@ -22,7 +23,5 @@ public class User extends LibraryEntry {
         this.city = city;
         this.userType = userType;
     }
-
-
 }
 

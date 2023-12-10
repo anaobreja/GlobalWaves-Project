@@ -12,23 +12,19 @@ import java.util.List;
 @Getter
 @Setter
 public final class Song extends AudioFile {
-    private String album;
     @Getter
+    @Setter
+    private String album;
     @Setter
     private ArrayList<String> tags;
-    @Getter
     @Setter
     private String lyrics;
-    @Getter
     @Setter
     private String genre;
-    @Getter
     @Setter
     private Integer releaseYear;
-    @Getter
     @Setter
     private String artist;
-    @Getter
     @Setter
     private Integer likes;
 

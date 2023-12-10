@@ -36,6 +36,7 @@ public class NormalUser extends User {
     private boolean lastSearched;
     public boolean online;
     private String pageType;
+    private String pageOwner;
 
     /**
      * Instantiates a new User.
@@ -104,12 +105,20 @@ public class NormalUser extends User {
 
         String message = "Successfully selected %s".formatted(selected.getName());
 
-        if (searchBar.getLastSearchType().equals("artist")) {
-            this.pageType = "artistPage";
-            message += "'s page.";
-        } else {
-            message += ".";
+        switch (searchBar.getLastSearchType()) {
+            case "artist" -> {
+                this.pageType = "artistPage";
+                this.pageOwner = searchBar.getLastSelected().getName();
+                message += "'s page.";
+            }
+            case "host" -> {
+                this.pageType = "hostPage";
+                this.pageOwner = searchBar.getLastSelected().getName();
+                message += "'s page.";
+            }
+            default -> message += ".";
         }
+
 
         return message;
     }
@@ -569,23 +578,49 @@ public class NormalUser extends User {
             return super.getName() + " is offline.";
         }
 
-        Page page = new Page() {
-            @Override
-            public String showPage() {
-                return null;
+
+        Page page = null;
+        switch (pageType) {
+            case "homePage" -> page = new HomePage(likedSongs, followedPlaylists);
+            case "likedContentPage" -> page = new LikedContentPage(likedSongs, followedPlaylists);
+            case "artistPage" -> {
+                    String artistName = pageOwner;
+                    Artist artist = Admin.getArtist(artistName);
+                    page = artist.getArtistPage();
             }
-        };
-        if (pageType.equals("homePage")) {
-             page = new HomePage(likedSongs, followedPlaylists);
-        } else if (pageType.equals("likedContentPage")) {
-            page = new LikedContentPage(likedSongs, followedPlaylists);
-        } else if (pageType.equals("artistPage")) {
-            if (searchBar.getLastSelected() != null) {
-                String artistName = searchBar.getLastSelected().getName();
-                Artist artist = Admin.getArtist(artistName);
-                page = artist.getArtistPage();
+            case "hostPage" -> {
+                    String hostName = pageOwner;
+                    Host host = Admin.getHosts(hostName);
+                    page = host.getHostPage();
+                }
+        }
+        if (page == null)
+            return null;
+        return page.showPage();
+    }
+
+    public String changePage(String type) {
+        if (!online) {
+            return super.getName() + " is offline.";
+        }
+
+        switch (type) {
+            case "Home" -> pageType = "homePage";
+            case "LikedContent" -> pageType = "likedContentPage";
+            default -> {
+                return super.getName() + " is trying to access a non-existent page.";
             }
         }
-        return page.showPage();
+
+        return super.getName() + " accessed " + type + " successfully.";
+    }
+
+    public Playlist getPlaylist(String name) {
+        for (Playlist Playlist : this.getPlaylists()) {
+            if (Playlist.getName().equals(name))
+                return Playlist;
+        }
+
+        return null;
     }
 }
