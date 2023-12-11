@@ -2,7 +2,6 @@ package app.audio.Collections;
 
 import app.audio.Files.AudioFile;
 import app.audio.Files.Song;
-import fileio.input.SongInput;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -39,7 +38,6 @@ public class Album extends AudioCollection {
     public AudioFile getTrackByIndex(final int index) {
         return songs.get(index);
     }
-
 
 
 }

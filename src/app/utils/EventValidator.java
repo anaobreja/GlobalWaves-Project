@@ -4,7 +4,9 @@ import java.time.DateTimeException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
-public class EventValidator {
+public final class EventValidator {
+
+    private EventValidator() {}
     public static boolean isValidDate(String dateStr) {
         try {
             DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");

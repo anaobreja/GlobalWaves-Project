@@ -1,34 +1,30 @@
 package app.user;
 
 import app.Admin;
-import app.audio.Collections.*;
-import app.audio.Files.AudioFile;
+import app.audio.Collections.Announcement;
+import app.audio.Collections.AudioCollection;
+import app.audio.Collections.Podcast;
 import app.audio.Files.Episode;
-import app.audio.Files.Song;
-import app.page.ArtistPage;
 import app.page.HostPage;
 import app.player.PlayerSource;
 import fileio.input.EpisodeInput;
-import fileio.input.PodcastInput;
-import fileio.input.SongInput;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Set;
 
 public class Host extends User {
     @Getter
     @Setter
     private HostPage hostPage;
+
     public Host(String username, int age, String city, String userType) {
         super(username, age, city, userType);
         this.hostPage = new HostPage(new ArrayList<>(), new ArrayList<>());
     }
 
 
-    private static Episode converseEpisode (EpisodeInput episodeInput) {
+    private static Episode converseEpisode(EpisodeInput episodeInput) {
         String name = episodeInput.getName();
         Integer duration = episodeInput.getDuration();
         String description = episodeInput.getDescription();
@@ -37,11 +33,11 @@ public class Host extends User {
     }
 
     public String addPodcast(String name, String owner, ArrayList<EpisodeInput> episodes,
-                           int timestamp) {
+                             int timestamp) {
 
         ArrayList<Episode> episodeResult = new ArrayList<>();
 
-        for(EpisodeInput episodeInput : episodes) {
+        for (EpisodeInput episodeInput : episodes) {
             Episode episode = converseEpisode(episodeInput);
             episodeResult.add(episode);
         }
@@ -83,14 +79,14 @@ public class Host extends User {
         }
 
         boolean hasPodcast = false;
-        for(Podcast podcastAux : hostPage.getPodcasts()) {
+        for (Podcast podcastAux : hostPage.getPodcasts()) {
             if (podcastAux.getName().equals(name)) {
                 hasPodcast = true;
                 break;
             }
         }
 
-        if (!hasPodcast){
+        if (!hasPodcast) {
             return username + " doesn't have a podcast with the given name.";
         }
 

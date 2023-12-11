@@ -11,6 +11,7 @@ import app.user.Artist;
 import app.user.Host;
 import app.user.NormalUser;
 import app.user.User;
+import app.utils.Statistics;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
@@ -471,6 +472,27 @@ public final class CommandRunner {
         return objectNode;
     }
 
+    public static ObjectNode getTop5Albums(final CommandInput commandInput) {
+        List<String> albums = Statistics.getTopLikedAlbums(Admin.getAlbums());
+
+        ObjectNode objectNode = objectMapper.createObjectNode();
+        objectNode.put("command", commandInput.getCommand());
+        objectNode.put("timestamp", commandInput.getTimestamp());
+        objectNode.put("result", objectMapper.valueToTree(albums));
+
+        return objectNode;
+    }
+
+    public static ObjectNode getTop5Artists(final CommandInput commandInput) {
+        List<String> albums = Statistics.getTop5Artists(Admin.getAlbums());
+
+        ObjectNode objectNode = objectMapper.createObjectNode();
+        objectNode.put("command", commandInput.getCommand());
+        objectNode.put("timestamp", commandInput.getTimestamp());
+        objectNode.put("result", objectMapper.valueToTree(albums));
+
+        return objectNode;
+    }
     /**
      * Gets top 5 playlists.
      *

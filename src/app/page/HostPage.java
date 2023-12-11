@@ -1,8 +1,6 @@
 package app.page;
 
 import app.audio.Collections.Announcement;
-import app.audio.Collections.Event;
-import app.audio.Collections.Merch;
 import app.audio.Collections.Podcast;
 import app.audio.Files.Episode;
 import lombok.Getter;
@@ -20,10 +18,11 @@ public class HostPage extends Page {
     @Setter
     private ArrayList<Announcement> announcements;
 
-    public HostPage (ArrayList<Podcast> podcasts, ArrayList<Announcement> announcements) {
+    public HostPage(ArrayList<Podcast> podcasts, ArrayList<Announcement> announcements) {
         this.podcasts = podcasts;
         this.announcements = announcements;
     }
+
     @Override
     public String showPage() {
         StringBuilder page = new StringBuilder();

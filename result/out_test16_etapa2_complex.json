@@ -18331,12 +18331,12 @@
   "user" : "glester",
   "command" : "addAlbum",
   "timestamp" : 11870,
-  "message" : "glester has another album with the same name."
+  "message" : "glester has added new album successfully."
 }, {
   "user" : "alice22",
   "command" : "printCurrentPage",
   "timestamp" : 11870,
-  "message" : "Albums:\n\t[Alone Hood]\n\t[Teen Revolution]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Alone Hood]\n\t[Teen Revolution]\n\t[Blue Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "alice22",
   "command" : "changePage",
@@ -18619,12 +18619,12 @@
   "user" : "mccarthyluis",
   "command" : "addAlbum",
   "timestamp" : 11950,
-  "message" : "mccarthyluis has another album with the same name."
+  "message" : "mccarthyluis has added new album successfully."
 }, {
   "user" : "irene33",
   "command" : "printCurrentPage",
   "timestamp" : 11950,
-  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Alone Hood]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "irene33",
   "command" : "changePage",
@@ -18727,12 +18727,12 @@
   "user" : "jacobdean",
   "command" : "addAlbum",
   "timestamp" : 11980,
-  "message" : "jacobdean has another album with the same name."
+  "message" : "jacobdean has added new album successfully."
 }, {
   "user" : "bob35",
   "command" : "printCurrentPage",
   "timestamp" : 11980,
-  "message" : "Albums:\n\t[Electric Funeral ]\n\t[Bad Dirt]\n\t[Bad Dreams]\n\t[Dynamic Dirt]\n\t[Blue Guide]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Electric Funeral ]\n\t[Bad Dirt]\n\t[Bad Dreams]\n\t[Dynamic Dirt]\n\t[Blue Guide]\n\t[Teen Hood]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "bob35",
   "command" : "changePage",
@@ -18794,7 +18794,7 @@
   "user" : "david27",
   "command" : "printCurrentPage",
   "timestamp" : 12000,
-  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Alone Hood]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "mccarthyluis",
   "command" : "addAlbum",
@@ -18804,7 +18804,7 @@
   "user" : "david27",
   "command" : "printCurrentPage",
   "timestamp" : 12000,
-  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Chill Dirt]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Alone Hood]\n\t[Chill Dirt]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "david27",
   "command" : "changePage",
@@ -18830,7 +18830,7 @@
   "user" : "emily30",
   "command" : "printCurrentPage",
   "timestamp" : 12010,
-  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Chill Dirt]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Alone Hood]\n\t[Chill Dirt]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "mccarthyluis",
   "command" : "addAlbum",
@@ -18840,7 +18840,7 @@
   "user" : "emily30",
   "command" : "printCurrentPage",
   "timestamp" : 12010,
-  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Chill Dirt]\n\t[Breezy Harmonies]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Alone Hood]\n\t[Chill Dirt]\n\t[Breezy Harmonies]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "emily30",
   "command" : "changePage",
@@ -18866,17 +18866,17 @@
   "user" : "frank21",
   "command" : "printCurrentPage",
   "timestamp" : 12020,
-  "message" : "Albums:\n\t[Alone Hood]\n\t[Teen Revolution]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Alone Hood]\n\t[Teen Revolution]\n\t[Blue Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "glester",
   "command" : "addAlbum",
   "timestamp" : 12020,
-  "message" : "glester has another album with the same name."
+  "message" : "glester has added new album successfully."
 }, {
   "user" : "frank21",
   "command" : "printCurrentPage",
   "timestamp" : 12020,
-  "message" : "Albums:\n\t[Alone Hood]\n\t[Teen Revolution]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Alone Hood]\n\t[Teen Revolution]\n\t[Blue Technology]\n\t[Groovy Harmonies]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "frank21",
   "command" : "changePage",
@@ -18938,7 +18938,7 @@
   "user" : "henry26",
   "command" : "printCurrentPage",
   "timestamp" : 12040,
-  "message" : "Albums:\n\t[Alone Hood]\n\t[Teen Revolution]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Alone Hood]\n\t[Teen Revolution]\n\t[Blue Technology]\n\t[Groovy Harmonies]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "glester",
   "command" : "addAlbum",
@@ -18948,7 +18948,7 @@
   "user" : "henry26",
   "command" : "printCurrentPage",
   "timestamp" : 12040,
-  "message" : "Albums:\n\t[Alone Hood]\n\t[Teen Revolution]\n\t[Electric Dreams]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Alone Hood]\n\t[Teen Revolution]\n\t[Blue Technology]\n\t[Groovy Harmonies]\n\t[Electric Dreams]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "henry26",
   "command" : "changePage",
@@ -19010,7 +19010,7 @@
   "user" : "jack29",
   "command" : "printCurrentPage",
   "timestamp" : 12060,
-  "message" : "Albums:\n\t[Electric Funeral ]\n\t[Bad Dirt]\n\t[Bad Dreams]\n\t[Dynamic Dirt]\n\t[Blue Guide]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Electric Funeral ]\n\t[Bad Dirt]\n\t[Bad Dreams]\n\t[Dynamic Dirt]\n\t[Blue Guide]\n\t[Teen Hood]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "jacobdean",
   "command" : "addAlbum",
@@ -19020,7 +19020,7 @@
   "user" : "jack29",
   "command" : "printCurrentPage",
   "timestamp" : 12060,
-  "message" : "Albums:\n\t[Electric Funeral ]\n\t[Bad Dirt]\n\t[Bad Dreams]\n\t[Dynamic Dirt]\n\t[Blue Guide]\n\t[Groovy Revolution]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Electric Funeral ]\n\t[Bad Dirt]\n\t[Bad Dreams]\n\t[Dynamic Dirt]\n\t[Blue Guide]\n\t[Teen Hood]\n\t[Groovy Revolution]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "jack29",
   "command" : "changePage",
@@ -19082,7 +19082,7 @@
   "user" : "bob35",
   "command" : "printCurrentPage",
   "timestamp" : 12080,
-  "message" : "Albums:\n\t[Electric Funeral ]\n\t[Bad Dirt]\n\t[Bad Dreams]\n\t[Dynamic Dirt]\n\t[Blue Guide]\n\t[Groovy Revolution]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Electric Funeral ]\n\t[Bad Dirt]\n\t[Bad Dreams]\n\t[Dynamic Dirt]\n\t[Blue Guide]\n\t[Teen Hood]\n\t[Groovy Revolution]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "jacobdean",
   "command" : "addAlbum",
@@ -19092,7 +19092,7 @@
   "user" : "bob35",
   "command" : "printCurrentPage",
   "timestamp" : 12080,
-  "message" : "Albums:\n\t[Electric Funeral ]\n\t[Bad Dirt]\n\t[Bad Dreams]\n\t[Dynamic Dirt]\n\t[Blue Guide]\n\t[Groovy Revolution]\n\t[Heroic Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Electric Funeral ]\n\t[Bad Dirt]\n\t[Bad Dreams]\n\t[Dynamic Dirt]\n\t[Blue Guide]\n\t[Teen Hood]\n\t[Groovy Revolution]\n\t[Heroic Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "bob35",
   "command" : "changePage",
@@ -19190,17 +19190,17 @@
   "user" : "emily30",
   "command" : "printCurrentPage",
   "timestamp" : 12110,
-  "message" : "Albums:\n\t[Alone Hood]\n\t[Teen Revolution]\n\t[Electric Dreams]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Alone Hood]\n\t[Teen Revolution]\n\t[Blue Technology]\n\t[Groovy Harmonies]\n\t[Electric Dreams]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "glester",
   "command" : "addAlbum",
   "timestamp" : 12110,
-  "message" : "glester has another album with the same name."
+  "message" : "glester has added new album successfully."
 }, {
   "user" : "emily30",
   "command" : "printCurrentPage",
   "timestamp" : 12110,
-  "message" : "Albums:\n\t[Alone Hood]\n\t[Teen Revolution]\n\t[Electric Dreams]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Alone Hood]\n\t[Teen Revolution]\n\t[Blue Technology]\n\t[Groovy Harmonies]\n\t[Electric Dreams]\n\t[Blue Guide]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "emily30",
   "command" : "changePage",
@@ -19334,7 +19334,7 @@
   "user" : "irene33",
   "command" : "printCurrentPage",
   "timestamp" : 12150,
-  "message" : "Albums:\n\t[Electric Funeral ]\n\t[Bad Dirt]\n\t[Bad Dreams]\n\t[Dynamic Dirt]\n\t[Blue Guide]\n\t[Groovy Revolution]\n\t[Heroic Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Electric Funeral ]\n\t[Bad Dirt]\n\t[Bad Dreams]\n\t[Dynamic Dirt]\n\t[Blue Guide]\n\t[Teen Hood]\n\t[Groovy Revolution]\n\t[Heroic Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "jacobdean",
   "command" : "addAlbum",
@@ -19344,7 +19344,7 @@
   "user" : "irene33",
   "command" : "printCurrentPage",
   "timestamp" : 12150,
-  "message" : "Albums:\n\t[Electric Funeral ]\n\t[Bad Dirt]\n\t[Bad Dreams]\n\t[Dynamic Dirt]\n\t[Blue Guide]\n\t[Groovy Revolution]\n\t[Heroic Technology]\n\t[Heroic Hood]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Electric Funeral ]\n\t[Bad Dirt]\n\t[Bad Dreams]\n\t[Dynamic Dirt]\n\t[Blue Guide]\n\t[Teen Hood]\n\t[Groovy Revolution]\n\t[Heroic Technology]\n\t[Heroic Hood]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "irene33",
   "command" : "changePage",
@@ -19370,7 +19370,7 @@
   "user" : "jack29",
   "command" : "printCurrentPage",
   "timestamp" : 12160,
-  "message" : "Albums:\n\t[Alone Hood]\n\t[Teen Revolution]\n\t[Electric Dreams]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Alone Hood]\n\t[Teen Revolution]\n\t[Blue Technology]\n\t[Groovy Harmonies]\n\t[Electric Dreams]\n\t[Blue Guide]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "glester",
   "command" : "addAlbum",
@@ -19380,7 +19380,7 @@
   "user" : "jack29",
   "command" : "printCurrentPage",
   "timestamp" : 12160,
-  "message" : "Albums:\n\t[Alone Hood]\n\t[Teen Revolution]\n\t[Electric Dreams]\n\t[Chill Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Alone Hood]\n\t[Teen Revolution]\n\t[Blue Technology]\n\t[Groovy Harmonies]\n\t[Electric Dreams]\n\t[Blue Guide]\n\t[Chill Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "jack29",
   "command" : "changePage",
@@ -19478,7 +19478,7 @@
   "user" : "carol19",
   "command" : "printCurrentPage",
   "timestamp" : 12190,
-  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Chill Dirt]\n\t[Breezy Harmonies]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Alone Hood]\n\t[Chill Dirt]\n\t[Breezy Harmonies]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "mccarthyluis",
   "command" : "addAlbum",
@@ -19488,7 +19488,7 @@
   "user" : "carol19",
   "command" : "printCurrentPage",
   "timestamp" : 12190,
-  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Chill Dirt]\n\t[Breezy Harmonies]\n\t[Electric Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Alone Hood]\n\t[Chill Dirt]\n\t[Breezy Harmonies]\n\t[Electric Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "carol19",
   "command" : "changePage",
@@ -19699,12 +19699,12 @@
   "user" : "cbutler",
   "command" : "addAlbum",
   "timestamp" : 12250,
-  "message" : "cbutler has another album with the same name."
+  "message" : "cbutler has added new album successfully."
 }, {
   "user" : "irene33",
   "command" : "printCurrentPage",
   "timestamp" : 12250,
-  "message" : "Albums:\n\t[Breezy View]\n\t[Blue Autumn]\n\t[Groovy Funeral ]\n\t[Bad Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Breezy View]\n\t[Blue Autumn]\n\t[Groovy Funeral ]\n\t[Bad Autumn]\n\t[Teen Hood]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "irene33",
   "command" : "changePage",
@@ -19838,7 +19838,7 @@
   "user" : "carol19",
   "command" : "printCurrentPage",
   "timestamp" : 12290,
-  "message" : "Albums:\n\t[Breezy View]\n\t[Blue Autumn]\n\t[Groovy Funeral ]\n\t[Bad Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Breezy View]\n\t[Blue Autumn]\n\t[Groovy Funeral ]\n\t[Bad Autumn]\n\t[Teen Hood]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "cbutler",
   "command" : "addAlbum",
@@ -19848,7 +19848,7 @@
   "user" : "carol19",
   "command" : "printCurrentPage",
   "timestamp" : 12290,
-  "message" : "Albums:\n\t[Breezy View]\n\t[Blue Autumn]\n\t[Groovy Funeral ]\n\t[Bad Autumn]\n\t[Groovy Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Breezy View]\n\t[Blue Autumn]\n\t[Groovy Funeral ]\n\t[Bad Autumn]\n\t[Teen Hood]\n\t[Groovy Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "carol19",
   "command" : "changePage",
@@ -19910,7 +19910,7 @@
   "user" : "emily30",
   "command" : "printCurrentPage",
   "timestamp" : 12310,
-  "message" : "Albums:\n\t[Electric Funeral ]\n\t[Bad Dirt]\n\t[Bad Dreams]\n\t[Dynamic Dirt]\n\t[Blue Guide]\n\t[Groovy Revolution]\n\t[Heroic Technology]\n\t[Heroic Hood]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Electric Funeral ]\n\t[Bad Dirt]\n\t[Bad Dreams]\n\t[Dynamic Dirt]\n\t[Blue Guide]\n\t[Teen Hood]\n\t[Groovy Revolution]\n\t[Heroic Technology]\n\t[Heroic Hood]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "jacobdean",
   "command" : "addAlbum",
@@ -19920,7 +19920,7 @@
   "user" : "emily30",
   "command" : "printCurrentPage",
   "timestamp" : 12310,
-  "message" : "Albums:\n\t[Electric Funeral ]\n\t[Bad Dirt]\n\t[Bad Dreams]\n\t[Dynamic Dirt]\n\t[Blue Guide]\n\t[Groovy Revolution]\n\t[Heroic Technology]\n\t[Heroic Hood]\n\t[Bad Funeral ]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Electric Funeral ]\n\t[Bad Dirt]\n\t[Bad Dreams]\n\t[Dynamic Dirt]\n\t[Blue Guide]\n\t[Teen Hood]\n\t[Groovy Revolution]\n\t[Heroic Technology]\n\t[Heroic Hood]\n\t[Bad Funeral ]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "emily30",
   "command" : "changePage",
@@ -20018,7 +20018,7 @@
   "user" : "henry26",
   "command" : "printCurrentPage",
   "timestamp" : 12340,
-  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Chill Dirt]\n\t[Breezy Harmonies]\n\t[Electric Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Alone Hood]\n\t[Chill Dirt]\n\t[Breezy Harmonies]\n\t[Electric Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "mccarthyluis",
   "command" : "addAlbum",
@@ -20028,7 +20028,7 @@
   "user" : "henry26",
   "command" : "printCurrentPage",
   "timestamp" : 12340,
-  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Chill Dirt]\n\t[Breezy Harmonies]\n\t[Electric Technology]\n\t[Electric Revolution]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Alone Hood]\n\t[Chill Dirt]\n\t[Breezy Harmonies]\n\t[Electric Technology]\n\t[Electric Revolution]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "henry26",
   "command" : "changePage",
@@ -20126,7 +20126,7 @@
   "user" : "alice22",
   "command" : "printCurrentPage",
   "timestamp" : 12370,
-  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Chill Dirt]\n\t[Breezy Harmonies]\n\t[Electric Technology]\n\t[Electric Revolution]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Alone Hood]\n\t[Chill Dirt]\n\t[Breezy Harmonies]\n\t[Electric Technology]\n\t[Electric Revolution]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "mccarthyluis",
   "command" : "addAlbum",
@@ -20136,7 +20136,7 @@
   "user" : "alice22",
   "command" : "printCurrentPage",
   "timestamp" : 12370,
-  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Chill Dirt]\n\t[Breezy Harmonies]\n\t[Electric Technology]\n\t[Electric Revolution]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Alone Hood]\n\t[Chill Dirt]\n\t[Breezy Harmonies]\n\t[Electric Technology]\n\t[Electric Revolution]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "alice22",
   "command" : "changePage",
@@ -20162,7 +20162,7 @@
   "user" : "bob35",
   "command" : "printCurrentPage",
   "timestamp" : 12380,
-  "message" : "Albums:\n\t[Alone Hood]\n\t[Teen Revolution]\n\t[Electric Dreams]\n\t[Chill Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Alone Hood]\n\t[Teen Revolution]\n\t[Blue Technology]\n\t[Groovy Harmonies]\n\t[Electric Dreams]\n\t[Blue Guide]\n\t[Chill Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "glester",
   "command" : "addAlbum",
@@ -20172,7 +20172,7 @@
   "user" : "bob35",
   "command" : "printCurrentPage",
   "timestamp" : 12380,
-  "message" : "Albums:\n\t[Alone Hood]\n\t[Teen Revolution]\n\t[Electric Dreams]\n\t[Chill Technology]\n\t[Teen Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Alone Hood]\n\t[Teen Revolution]\n\t[Blue Technology]\n\t[Groovy Harmonies]\n\t[Electric Dreams]\n\t[Blue Guide]\n\t[Chill Technology]\n\t[Teen Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "bob35",
   "command" : "changePage",
@@ -20270,17 +20270,17 @@
   "user" : "emily30",
   "command" : "printCurrentPage",
   "timestamp" : 12410,
-  "message" : "Albums:\n\t[Electric Funeral ]\n\t[Bad Dirt]\n\t[Bad Dreams]\n\t[Dynamic Dirt]\n\t[Blue Guide]\n\t[Groovy Revolution]\n\t[Heroic Technology]\n\t[Heroic Hood]\n\t[Bad Funeral ]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Electric Funeral ]\n\t[Bad Dirt]\n\t[Bad Dreams]\n\t[Dynamic Dirt]\n\t[Blue Guide]\n\t[Teen Hood]\n\t[Groovy Revolution]\n\t[Heroic Technology]\n\t[Heroic Hood]\n\t[Bad Funeral ]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "jacobdean",
   "command" : "addAlbum",
   "timestamp" : 12410,
-  "message" : "jacobdean has another album with the same name."
+  "message" : "jacobdean has added new album successfully."
 }, {
   "user" : "emily30",
   "command" : "printCurrentPage",
   "timestamp" : 12410,
-  "message" : "Albums:\n\t[Electric Funeral ]\n\t[Bad Dirt]\n\t[Bad Dreams]\n\t[Dynamic Dirt]\n\t[Blue Guide]\n\t[Groovy Revolution]\n\t[Heroic Technology]\n\t[Heroic Hood]\n\t[Bad Funeral ]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Electric Funeral ]\n\t[Bad Dirt]\n\t[Bad Dreams]\n\t[Dynamic Dirt]\n\t[Blue Guide]\n\t[Teen Hood]\n\t[Groovy Revolution]\n\t[Heroic Technology]\n\t[Heroic Hood]\n\t[Bad Funeral ]\n\t[Groovy Hood]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "emily30",
   "command" : "changePage",
@@ -20378,17 +20378,17 @@
   "user" : "henry26",
   "command" : "printCurrentPage",
   "timestamp" : 12440,
-  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Chill Dirt]\n\t[Breezy Harmonies]\n\t[Electric Technology]\n\t[Electric Revolution]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Alone Hood]\n\t[Chill Dirt]\n\t[Breezy Harmonies]\n\t[Electric Technology]\n\t[Electric Revolution]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "mccarthyluis",
   "command" : "addAlbum",
   "timestamp" : 12440,
-  "message" : "mccarthyluis has another album with the same name."
+  "message" : "mccarthyluis has added new album successfully."
 }, {
   "user" : "henry26",
   "command" : "printCurrentPage",
   "timestamp" : 12440,
-  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Chill Dirt]\n\t[Breezy Harmonies]\n\t[Electric Technology]\n\t[Electric Revolution]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Alone Hood]\n\t[Chill Dirt]\n\t[Breezy Harmonies]\n\t[Electric Technology]\n\t[Electric Revolution]\n\t[Electric Dreams]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "henry26",
   "command" : "changePage",
@@ -20486,17 +20486,17 @@
   "user" : "alice22",
   "command" : "printCurrentPage",
   "timestamp" : 12470,
-  "message" : "Albums:\n\t[Electric Funeral ]\n\t[Bad Dirt]\n\t[Bad Dreams]\n\t[Dynamic Dirt]\n\t[Blue Guide]\n\t[Groovy Revolution]\n\t[Heroic Technology]\n\t[Heroic Hood]\n\t[Bad Funeral ]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Electric Funeral ]\n\t[Bad Dirt]\n\t[Bad Dreams]\n\t[Dynamic Dirt]\n\t[Blue Guide]\n\t[Teen Hood]\n\t[Groovy Revolution]\n\t[Heroic Technology]\n\t[Heroic Hood]\n\t[Bad Funeral ]\n\t[Groovy Hood]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "jacobdean",
   "command" : "addAlbum",
   "timestamp" : 12470,
-  "message" : "jacobdean has another album with the same name."
+  "message" : "jacobdean has added new album successfully."
 }, {
   "user" : "alice22",
   "command" : "printCurrentPage",
   "timestamp" : 12470,
-  "message" : "Albums:\n\t[Electric Funeral ]\n\t[Bad Dirt]\n\t[Bad Dreams]\n\t[Dynamic Dirt]\n\t[Blue Guide]\n\t[Groovy Revolution]\n\t[Heroic Technology]\n\t[Heroic Hood]\n\t[Bad Funeral ]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Electric Funeral ]\n\t[Bad Dirt]\n\t[Bad Dreams]\n\t[Dynamic Dirt]\n\t[Blue Guide]\n\t[Teen Hood]\n\t[Groovy Revolution]\n\t[Heroic Technology]\n\t[Heroic Hood]\n\t[Bad Funeral ]\n\t[Groovy Hood]\n\t[Chill Dirt]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "alice22",
   "command" : "changePage",
@@ -20558,7 +20558,7 @@
   "user" : "carol19",
   "command" : "printCurrentPage",
   "timestamp" : 12490,
-  "message" : "Albums:\n\t[Breezy View]\n\t[Blue Autumn]\n\t[Groovy Funeral ]\n\t[Bad Autumn]\n\t[Groovy Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Breezy View]\n\t[Blue Autumn]\n\t[Groovy Funeral ]\n\t[Bad Autumn]\n\t[Teen Hood]\n\t[Groovy Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "cbutler",
   "command" : "addAlbum",
@@ -20568,7 +20568,7 @@
   "user" : "carol19",
   "command" : "printCurrentPage",
   "timestamp" : 12490,
-  "message" : "Albums:\n\t[Breezy View]\n\t[Blue Autumn]\n\t[Groovy Funeral ]\n\t[Bad Autumn]\n\t[Groovy Technology]\n\t[Alone Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Breezy View]\n\t[Blue Autumn]\n\t[Groovy Funeral ]\n\t[Bad Autumn]\n\t[Teen Hood]\n\t[Groovy Technology]\n\t[Alone Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "carol19",
   "command" : "changePage",
@@ -20594,17 +20594,17 @@
   "user" : "david27",
   "command" : "printCurrentPage",
   "timestamp" : 12500,
-  "message" : "Albums:\n\t[Breezy View]\n\t[Blue Autumn]\n\t[Groovy Funeral ]\n\t[Bad Autumn]\n\t[Groovy Technology]\n\t[Alone Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Breezy View]\n\t[Blue Autumn]\n\t[Groovy Funeral ]\n\t[Bad Autumn]\n\t[Teen Hood]\n\t[Groovy Technology]\n\t[Alone Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "cbutler",
   "command" : "addAlbum",
   "timestamp" : 12500,
-  "message" : "cbutler has another album with the same name."
+  "message" : "cbutler has added new album successfully."
 }, {
   "user" : "david27",
   "command" : "printCurrentPage",
   "timestamp" : 12500,
-  "message" : "Albums:\n\t[Breezy View]\n\t[Blue Autumn]\n\t[Groovy Funeral ]\n\t[Bad Autumn]\n\t[Groovy Technology]\n\t[Alone Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Breezy View]\n\t[Blue Autumn]\n\t[Groovy Funeral ]\n\t[Bad Autumn]\n\t[Teen Hood]\n\t[Groovy Technology]\n\t[Alone Technology]\n\t[Groovy Dreams]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "david27",
   "command" : "changePage",
@@ -20630,7 +20630,7 @@
   "user" : "emily30",
   "command" : "printCurrentPage",
   "timestamp" : 12510,
-  "message" : "Albums:\n\t[Alone Hood]\n\t[Teen Revolution]\n\t[Electric Dreams]\n\t[Chill Technology]\n\t[Teen Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Alone Hood]\n\t[Teen Revolution]\n\t[Blue Technology]\n\t[Groovy Harmonies]\n\t[Electric Dreams]\n\t[Blue Guide]\n\t[Chill Technology]\n\t[Teen Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "glester",
   "command" : "addAlbum",
@@ -20640,7 +20640,7 @@
   "user" : "emily30",
   "command" : "printCurrentPage",
   "timestamp" : 12510,
-  "message" : "Albums:\n\t[Alone Hood]\n\t[Teen Revolution]\n\t[Electric Dreams]\n\t[Chill Technology]\n\t[Teen Autumn]\n\t[Groovy Dirt]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Alone Hood]\n\t[Teen Revolution]\n\t[Blue Technology]\n\t[Groovy Harmonies]\n\t[Electric Dreams]\n\t[Blue Guide]\n\t[Chill Technology]\n\t[Teen Autumn]\n\t[Groovy Dirt]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "emily30",
   "command" : "changePage",
@@ -20774,7 +20774,7 @@
   "user" : "irene33",
   "command" : "printCurrentPage",
   "timestamp" : 12550,
-  "message" : "Albums:\n\t[Alone Hood]\n\t[Teen Revolution]\n\t[Electric Dreams]\n\t[Chill Technology]\n\t[Teen Autumn]\n\t[Groovy Dirt]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Alone Hood]\n\t[Teen Revolution]\n\t[Blue Technology]\n\t[Groovy Harmonies]\n\t[Electric Dreams]\n\t[Blue Guide]\n\t[Chill Technology]\n\t[Teen Autumn]\n\t[Groovy Dirt]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "glester",
   "command" : "addAlbum",
@@ -20784,7 +20784,7 @@
   "user" : "irene33",
   "command" : "printCurrentPage",
   "timestamp" : 12550,
-  "message" : "Albums:\n\t[Alone Hood]\n\t[Teen Revolution]\n\t[Electric Dreams]\n\t[Chill Technology]\n\t[Teen Autumn]\n\t[Groovy Dirt]\n\t[Heroic View]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Alone Hood]\n\t[Teen Revolution]\n\t[Blue Technology]\n\t[Groovy Harmonies]\n\t[Electric Dreams]\n\t[Blue Guide]\n\t[Chill Technology]\n\t[Teen Autumn]\n\t[Groovy Dirt]\n\t[Heroic View]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "irene33",
   "command" : "changePage",
@@ -20846,17 +20846,17 @@
   "user" : "alice22",
   "command" : "printCurrentPage",
   "timestamp" : 12570,
-  "message" : "Albums:\n\t[Alone Hood]\n\t[Teen Revolution]\n\t[Electric Dreams]\n\t[Chill Technology]\n\t[Teen Autumn]\n\t[Groovy Dirt]\n\t[Heroic View]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Alone Hood]\n\t[Teen Revolution]\n\t[Blue Technology]\n\t[Groovy Harmonies]\n\t[Electric Dreams]\n\t[Blue Guide]\n\t[Chill Technology]\n\t[Teen Autumn]\n\t[Groovy Dirt]\n\t[Heroic View]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "glester",
   "command" : "addAlbum",
   "timestamp" : 12570,
-  "message" : "glester has another album with the same name."
+  "message" : "glester has added new album successfully."
 }, {
   "user" : "alice22",
   "command" : "printCurrentPage",
   "timestamp" : 12570,
-  "message" : "Albums:\n\t[Alone Hood]\n\t[Teen Revolution]\n\t[Electric Dreams]\n\t[Chill Technology]\n\t[Teen Autumn]\n\t[Groovy Dirt]\n\t[Heroic View]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Alone Hood]\n\t[Teen Revolution]\n\t[Blue Technology]\n\t[Groovy Harmonies]\n\t[Electric Dreams]\n\t[Blue Guide]\n\t[Chill Technology]\n\t[Teen Autumn]\n\t[Groovy Dirt]\n\t[Heroic View]\n\t[Electric Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "alice22",
   "command" : "changePage",
@@ -20882,7 +20882,7 @@
   "user" : "bob35",
   "command" : "printCurrentPage",
   "timestamp" : 12580,
-  "message" : "Albums:\n\t[Breezy View]\n\t[Blue Autumn]\n\t[Groovy Funeral ]\n\t[Bad Autumn]\n\t[Groovy Technology]\n\t[Alone Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Breezy View]\n\t[Blue Autumn]\n\t[Groovy Funeral ]\n\t[Bad Autumn]\n\t[Teen Hood]\n\t[Groovy Technology]\n\t[Alone Technology]\n\t[Groovy Dreams]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "cbutler",
   "command" : "addAlbum",
@@ -20892,7 +20892,7 @@
   "user" : "bob35",
   "command" : "printCurrentPage",
   "timestamp" : 12580,
-  "message" : "Albums:\n\t[Breezy View]\n\t[Blue Autumn]\n\t[Groovy Funeral ]\n\t[Bad Autumn]\n\t[Groovy Technology]\n\t[Alone Technology]\n\t[Heroic Funeral ]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Breezy View]\n\t[Blue Autumn]\n\t[Groovy Funeral ]\n\t[Bad Autumn]\n\t[Teen Hood]\n\t[Groovy Technology]\n\t[Alone Technology]\n\t[Groovy Dreams]\n\t[Heroic Funeral ]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "bob35",
   "command" : "changePage",
@@ -20918,17 +20918,17 @@
   "user" : "carol19",
   "command" : "printCurrentPage",
   "timestamp" : 12590,
-  "message" : "Albums:\n\t[Electric Funeral ]\n\t[Bad Dirt]\n\t[Bad Dreams]\n\t[Dynamic Dirt]\n\t[Blue Guide]\n\t[Groovy Revolution]\n\t[Heroic Technology]\n\t[Heroic Hood]\n\t[Bad Funeral ]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Electric Funeral ]\n\t[Bad Dirt]\n\t[Bad Dreams]\n\t[Dynamic Dirt]\n\t[Blue Guide]\n\t[Teen Hood]\n\t[Groovy Revolution]\n\t[Heroic Technology]\n\t[Heroic Hood]\n\t[Bad Funeral ]\n\t[Groovy Hood]\n\t[Chill Dirt]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "jacobdean",
   "command" : "addAlbum",
   "timestamp" : 12590,
-  "message" : "jacobdean has another album with the same name."
+  "message" : "jacobdean has added new album successfully."
 }, {
   "user" : "carol19",
   "command" : "printCurrentPage",
   "timestamp" : 12590,
-  "message" : "Albums:\n\t[Electric Funeral ]\n\t[Bad Dirt]\n\t[Bad Dreams]\n\t[Dynamic Dirt]\n\t[Blue Guide]\n\t[Groovy Revolution]\n\t[Heroic Technology]\n\t[Heroic Hood]\n\t[Bad Funeral ]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Electric Funeral ]\n\t[Bad Dirt]\n\t[Bad Dreams]\n\t[Dynamic Dirt]\n\t[Blue Guide]\n\t[Teen Hood]\n\t[Groovy Revolution]\n\t[Heroic Technology]\n\t[Heroic Hood]\n\t[Bad Funeral ]\n\t[Groovy Hood]\n\t[Chill Dirt]\n\t[Electric Revolution]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "carol19",
   "command" : "changePage",
@@ -20954,7 +20954,7 @@
   "user" : "david27",
   "command" : "printCurrentPage",
   "timestamp" : 12600,
-  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Chill Dirt]\n\t[Breezy Harmonies]\n\t[Electric Technology]\n\t[Electric Revolution]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Alone Hood]\n\t[Chill Dirt]\n\t[Breezy Harmonies]\n\t[Electric Technology]\n\t[Electric Revolution]\n\t[Electric Dreams]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "mccarthyluis",
   "command" : "addAlbum",
@@ -20964,7 +20964,7 @@
   "user" : "david27",
   "command" : "printCurrentPage",
   "timestamp" : 12600,
-  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Chill Dirt]\n\t[Breezy Harmonies]\n\t[Electric Technology]\n\t[Electric Revolution]\n\t[Bad Harmonies]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Alone Hood]\n\t[Chill Dirt]\n\t[Breezy Harmonies]\n\t[Electric Technology]\n\t[Electric Revolution]\n\t[Electric Dreams]\n\t[Bad Harmonies]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "david27",
   "command" : "changePage",
@@ -21026,7 +21026,7 @@
   "user" : "frank21",
   "command" : "printCurrentPage",
   "timestamp" : 12620,
-  "message" : "Albums:\n\t[Alone Hood]\n\t[Teen Revolution]\n\t[Electric Dreams]\n\t[Chill Technology]\n\t[Teen Autumn]\n\t[Groovy Dirt]\n\t[Heroic View]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Alone Hood]\n\t[Teen Revolution]\n\t[Blue Technology]\n\t[Groovy Harmonies]\n\t[Electric Dreams]\n\t[Blue Guide]\n\t[Chill Technology]\n\t[Teen Autumn]\n\t[Groovy Dirt]\n\t[Heroic View]\n\t[Electric Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "glester",
   "command" : "addAlbum",
@@ -21036,7 +21036,7 @@
   "user" : "frank21",
   "command" : "printCurrentPage",
   "timestamp" : 12620,
-  "message" : "Albums:\n\t[Alone Hood]\n\t[Teen Revolution]\n\t[Electric Dreams]\n\t[Chill Technology]\n\t[Teen Autumn]\n\t[Groovy Dirt]\n\t[Heroic View]\n\t[Heroic Harmonies]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Alone Hood]\n\t[Teen Revolution]\n\t[Blue Technology]\n\t[Groovy Harmonies]\n\t[Electric Dreams]\n\t[Blue Guide]\n\t[Chill Technology]\n\t[Teen Autumn]\n\t[Groovy Dirt]\n\t[Heroic View]\n\t[Electric Technology]\n\t[Heroic Harmonies]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "frank21",
   "command" : "changePage",
@@ -21206,7 +21206,7 @@
   "user" : "alice22",
   "command" : "printCurrentPage",
   "timestamp" : 12670,
-  "message" : "Albums:\n\t[Breezy View]\n\t[Blue Autumn]\n\t[Groovy Funeral ]\n\t[Bad Autumn]\n\t[Groovy Technology]\n\t[Alone Technology]\n\t[Heroic Funeral ]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Breezy View]\n\t[Blue Autumn]\n\t[Groovy Funeral ]\n\t[Bad Autumn]\n\t[Teen Hood]\n\t[Groovy Technology]\n\t[Alone Technology]\n\t[Groovy Dreams]\n\t[Heroic Funeral ]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "cbutler",
   "command" : "addAlbum",
@@ -21216,7 +21216,7 @@
   "user" : "alice22",
   "command" : "printCurrentPage",
   "timestamp" : 12670,
-  "message" : "Albums:\n\t[Breezy View]\n\t[Blue Autumn]\n\t[Groovy Funeral ]\n\t[Bad Autumn]\n\t[Groovy Technology]\n\t[Alone Technology]\n\t[Heroic Funeral ]\n\t[Groovy View]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Breezy View]\n\t[Blue Autumn]\n\t[Groovy Funeral ]\n\t[Bad Autumn]\n\t[Teen Hood]\n\t[Groovy Technology]\n\t[Alone Technology]\n\t[Groovy Dreams]\n\t[Heroic Funeral ]\n\t[Groovy View]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "alice22",
   "command" : "changePage",
@@ -21242,7 +21242,7 @@
   "user" : "bob35",
   "command" : "printCurrentPage",
   "timestamp" : 12680,
-  "message" : "Albums:\n\t[Electric Funeral ]\n\t[Bad Dirt]\n\t[Bad Dreams]\n\t[Dynamic Dirt]\n\t[Blue Guide]\n\t[Groovy Revolution]\n\t[Heroic Technology]\n\t[Heroic Hood]\n\t[Bad Funeral ]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Electric Funeral ]\n\t[Bad Dirt]\n\t[Bad Dreams]\n\t[Dynamic Dirt]\n\t[Blue Guide]\n\t[Teen Hood]\n\t[Groovy Revolution]\n\t[Heroic Technology]\n\t[Heroic Hood]\n\t[Bad Funeral ]\n\t[Groovy Hood]\n\t[Chill Dirt]\n\t[Electric Revolution]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "jacobdean",
   "command" : "addAlbum",
@@ -21252,7 +21252,7 @@
   "user" : "bob35",
   "command" : "printCurrentPage",
   "timestamp" : 12680,
-  "message" : "Albums:\n\t[Electric Funeral ]\n\t[Bad Dirt]\n\t[Bad Dreams]\n\t[Dynamic Dirt]\n\t[Blue Guide]\n\t[Groovy Revolution]\n\t[Heroic Technology]\n\t[Heroic Hood]\n\t[Bad Funeral ]\n\t[Alone Dirt]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Electric Funeral ]\n\t[Bad Dirt]\n\t[Bad Dreams]\n\t[Dynamic Dirt]\n\t[Blue Guide]\n\t[Teen Hood]\n\t[Groovy Revolution]\n\t[Heroic Technology]\n\t[Heroic Hood]\n\t[Bad Funeral ]\n\t[Groovy Hood]\n\t[Chill Dirt]\n\t[Electric Revolution]\n\t[Alone Dirt]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "bob35",
   "command" : "changePage",
@@ -21278,17 +21278,17 @@
   "user" : "carol19",
   "command" : "printCurrentPage",
   "timestamp" : 12690,
-  "message" : "Albums:\n\t[Electric Funeral ]\n\t[Bad Dirt]\n\t[Bad Dreams]\n\t[Dynamic Dirt]\n\t[Blue Guide]\n\t[Groovy Revolution]\n\t[Heroic Technology]\n\t[Heroic Hood]\n\t[Bad Funeral ]\n\t[Alone Dirt]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Electric Funeral ]\n\t[Bad Dirt]\n\t[Bad Dreams]\n\t[Dynamic Dirt]\n\t[Blue Guide]\n\t[Teen Hood]\n\t[Groovy Revolution]\n\t[Heroic Technology]\n\t[Heroic Hood]\n\t[Bad Funeral ]\n\t[Groovy Hood]\n\t[Chill Dirt]\n\t[Electric Revolution]\n\t[Alone Dirt]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "jacobdean",
   "command" : "addAlbum",
   "timestamp" : 12690,
-  "message" : "jacobdean has another album with the same name."
+  "message" : "jacobdean has added new album successfully."
 }, {
   "user" : "carol19",
   "command" : "printCurrentPage",
   "timestamp" : 12690,
-  "message" : "Albums:\n\t[Electric Funeral ]\n\t[Bad Dirt]\n\t[Bad Dreams]\n\t[Dynamic Dirt]\n\t[Blue Guide]\n\t[Groovy Revolution]\n\t[Heroic Technology]\n\t[Heroic Hood]\n\t[Bad Funeral ]\n\t[Alone Dirt]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Electric Funeral ]\n\t[Bad Dirt]\n\t[Bad Dreams]\n\t[Dynamic Dirt]\n\t[Blue Guide]\n\t[Teen Hood]\n\t[Groovy Revolution]\n\t[Heroic Technology]\n\t[Heroic Hood]\n\t[Bad Funeral ]\n\t[Groovy Hood]\n\t[Chill Dirt]\n\t[Electric Revolution]\n\t[Alone Dirt]\n\t[Teen Guide]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "carol19",
   "command" : "changePage",
@@ -21422,17 +21422,17 @@
   "user" : "grace25",
   "command" : "printCurrentPage",
   "timestamp" : 12730,
-  "message" : "Albums:\n\t[Breezy View]\n\t[Blue Autumn]\n\t[Groovy Funeral ]\n\t[Bad Autumn]\n\t[Groovy Technology]\n\t[Alone Technology]\n\t[Heroic Funeral ]\n\t[Groovy View]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Breezy View]\n\t[Blue Autumn]\n\t[Groovy Funeral ]\n\t[Bad Autumn]\n\t[Teen Hood]\n\t[Groovy Technology]\n\t[Alone Technology]\n\t[Groovy Dreams]\n\t[Heroic Funeral ]\n\t[Groovy View]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "cbutler",
   "command" : "addAlbum",
   "timestamp" : 12730,
-  "message" : "cbutler has another album with the same name."
+  "message" : "cbutler has added new album successfully."
 }, {
   "user" : "grace25",
   "command" : "printCurrentPage",
   "timestamp" : 12730,
-  "message" : "Albums:\n\t[Breezy View]\n\t[Blue Autumn]\n\t[Groovy Funeral ]\n\t[Bad Autumn]\n\t[Groovy Technology]\n\t[Alone Technology]\n\t[Heroic Funeral ]\n\t[Groovy View]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Breezy View]\n\t[Blue Autumn]\n\t[Groovy Funeral ]\n\t[Bad Autumn]\n\t[Teen Hood]\n\t[Groovy Technology]\n\t[Alone Technology]\n\t[Groovy Dreams]\n\t[Heroic Funeral ]\n\t[Groovy View]\n\t[Heroic Harmonies]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "grace25",
   "command" : "changePage",
@@ -21566,7 +21566,7 @@
   "user" : "alice22",
   "command" : "printCurrentPage",
   "timestamp" : 12770,
-  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Chill Dirt]\n\t[Breezy Harmonies]\n\t[Electric Technology]\n\t[Electric Revolution]\n\t[Bad Harmonies]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Alone Hood]\n\t[Chill Dirt]\n\t[Breezy Harmonies]\n\t[Electric Technology]\n\t[Electric Revolution]\n\t[Electric Dreams]\n\t[Bad Harmonies]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "mccarthyluis",
   "command" : "addAlbum",
@@ -21576,7 +21576,7 @@
   "user" : "alice22",
   "command" : "printCurrentPage",
   "timestamp" : 12770,
-  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Chill Dirt]\n\t[Breezy Harmonies]\n\t[Electric Technology]\n\t[Electric Revolution]\n\t[Bad Harmonies]\n\t[Groovy Guide]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Alone Hood]\n\t[Chill Dirt]\n\t[Breezy Harmonies]\n\t[Electric Technology]\n\t[Electric Revolution]\n\t[Electric Dreams]\n\t[Bad Harmonies]\n\t[Groovy Guide]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "alice22",
   "command" : "changePage",
@@ -21674,7 +21674,7 @@
   "user" : "david27",
   "command" : "printCurrentPage",
   "timestamp" : 12800,
-  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Chill Dirt]\n\t[Breezy Harmonies]\n\t[Electric Technology]\n\t[Electric Revolution]\n\t[Bad Harmonies]\n\t[Groovy Guide]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Alone Hood]\n\t[Chill Dirt]\n\t[Breezy Harmonies]\n\t[Electric Technology]\n\t[Electric Revolution]\n\t[Electric Dreams]\n\t[Bad Harmonies]\n\t[Groovy Guide]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "mccarthyluis",
   "command" : "addAlbum",
@@ -21684,7 +21684,7 @@
   "user" : "david27",
   "command" : "printCurrentPage",
   "timestamp" : 12800,
-  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Chill Dirt]\n\t[Breezy Harmonies]\n\t[Electric Technology]\n\t[Electric Revolution]\n\t[Bad Harmonies]\n\t[Groovy Guide]\n\t[Dynamic Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Alone Hood]\n\t[Chill Dirt]\n\t[Breezy Harmonies]\n\t[Electric Technology]\n\t[Electric Revolution]\n\t[Electric Dreams]\n\t[Bad Harmonies]\n\t[Groovy Guide]\n\t[Dynamic Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "david27",
   "command" : "changePage",
@@ -21710,7 +21710,7 @@
   "user" : "emily30",
   "command" : "printCurrentPage",
   "timestamp" : 12810,
-  "message" : "Albums:\n\t[Electric Funeral ]\n\t[Bad Dirt]\n\t[Bad Dreams]\n\t[Dynamic Dirt]\n\t[Blue Guide]\n\t[Groovy Revolution]\n\t[Heroic Technology]\n\t[Heroic Hood]\n\t[Bad Funeral ]\n\t[Alone Dirt]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Electric Funeral ]\n\t[Bad Dirt]\n\t[Bad Dreams]\n\t[Dynamic Dirt]\n\t[Blue Guide]\n\t[Teen Hood]\n\t[Groovy Revolution]\n\t[Heroic Technology]\n\t[Heroic Hood]\n\t[Bad Funeral ]\n\t[Groovy Hood]\n\t[Chill Dirt]\n\t[Electric Revolution]\n\t[Alone Dirt]\n\t[Teen Guide]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "jacobdean",
   "command" : "addAlbum",
@@ -21720,7 +21720,7 @@
   "user" : "emily30",
   "command" : "printCurrentPage",
   "timestamp" : 12810,
-  "message" : "Albums:\n\t[Electric Funeral ]\n\t[Bad Dirt]\n\t[Bad Dreams]\n\t[Dynamic Dirt]\n\t[Blue Guide]\n\t[Groovy Revolution]\n\t[Heroic Technology]\n\t[Heroic Hood]\n\t[Bad Funeral ]\n\t[Alone Dirt]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Electric Funeral ]\n\t[Bad Dirt]\n\t[Bad Dreams]\n\t[Dynamic Dirt]\n\t[Blue Guide]\n\t[Teen Hood]\n\t[Groovy Revolution]\n\t[Heroic Technology]\n\t[Heroic Hood]\n\t[Bad Funeral ]\n\t[Groovy Hood]\n\t[Chill Dirt]\n\t[Electric Revolution]\n\t[Alone Dirt]\n\t[Teen Guide]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "emily30",
   "command" : "changePage",
@@ -21782,7 +21782,7 @@
   "user" : "grace25",
   "command" : "printCurrentPage",
   "timestamp" : 12830,
-  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Chill Dirt]\n\t[Breezy Harmonies]\n\t[Electric Technology]\n\t[Electric Revolution]\n\t[Bad Harmonies]\n\t[Groovy Guide]\n\t[Dynamic Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Alone Hood]\n\t[Chill Dirt]\n\t[Breezy Harmonies]\n\t[Electric Technology]\n\t[Electric Revolution]\n\t[Electric Dreams]\n\t[Bad Harmonies]\n\t[Groovy Guide]\n\t[Dynamic Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "mccarthyluis",
   "command" : "addAlbum",
@@ -21792,7 +21792,7 @@
   "user" : "grace25",
   "command" : "printCurrentPage",
   "timestamp" : 12830,
-  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Chill Dirt]\n\t[Breezy Harmonies]\n\t[Electric Technology]\n\t[Electric Revolution]\n\t[Bad Harmonies]\n\t[Groovy Guide]\n\t[Dynamic Autumn]\n\t[Chill Hood]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Alone Hood]\n\t[Chill Dirt]\n\t[Breezy Harmonies]\n\t[Electric Technology]\n\t[Electric Revolution]\n\t[Electric Dreams]\n\t[Bad Harmonies]\n\t[Groovy Guide]\n\t[Dynamic Autumn]\n\t[Chill Hood]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "grace25",
   "command" : "changePage",
@@ -21818,7 +21818,7 @@
   "user" : "henry26",
   "command" : "printCurrentPage",
   "timestamp" : 12840,
-  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Chill Dirt]\n\t[Breezy Harmonies]\n\t[Electric Technology]\n\t[Electric Revolution]\n\t[Bad Harmonies]\n\t[Groovy Guide]\n\t[Dynamic Autumn]\n\t[Chill Hood]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Alone Hood]\n\t[Chill Dirt]\n\t[Breezy Harmonies]\n\t[Electric Technology]\n\t[Electric Revolution]\n\t[Electric Dreams]\n\t[Bad Harmonies]\n\t[Groovy Guide]\n\t[Dynamic Autumn]\n\t[Chill Hood]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "mccarthyluis",
   "command" : "addAlbum",
@@ -21828,7 +21828,7 @@
   "user" : "henry26",
   "command" : "printCurrentPage",
   "timestamp" : 12840,
-  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Chill Dirt]\n\t[Breezy Harmonies]\n\t[Electric Technology]\n\t[Electric Revolution]\n\t[Bad Harmonies]\n\t[Groovy Guide]\n\t[Dynamic Autumn]\n\t[Chill Hood]\n\t[Breezy Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Alone Hood]\n\t[Chill Dirt]\n\t[Breezy Harmonies]\n\t[Electric Technology]\n\t[Electric Revolution]\n\t[Electric Dreams]\n\t[Bad Harmonies]\n\t[Groovy Guide]\n\t[Dynamic Autumn]\n\t[Chill Hood]\n\t[Breezy Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "henry26",
   "command" : "changePage",
@@ -21854,7 +21854,7 @@
   "user" : "irene33",
   "command" : "printCurrentPage",
   "timestamp" : 12850,
-  "message" : "Albums:\n\t[Electric Funeral ]\n\t[Bad Dirt]\n\t[Bad Dreams]\n\t[Dynamic Dirt]\n\t[Blue Guide]\n\t[Groovy Revolution]\n\t[Heroic Technology]\n\t[Heroic Hood]\n\t[Bad Funeral ]\n\t[Alone Dirt]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Electric Funeral ]\n\t[Bad Dirt]\n\t[Bad Dreams]\n\t[Dynamic Dirt]\n\t[Blue Guide]\n\t[Teen Hood]\n\t[Groovy Revolution]\n\t[Heroic Technology]\n\t[Heroic Hood]\n\t[Bad Funeral ]\n\t[Groovy Hood]\n\t[Chill Dirt]\n\t[Electric Revolution]\n\t[Alone Dirt]\n\t[Teen Guide]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "jacobdean",
   "command" : "addAlbum",
@@ -21864,7 +21864,7 @@
   "user" : "irene33",
   "command" : "printCurrentPage",
   "timestamp" : 12850,
-  "message" : "Albums:\n\t[Electric Funeral ]\n\t[Bad Dirt]\n\t[Bad Dreams]\n\t[Dynamic Dirt]\n\t[Blue Guide]\n\t[Groovy Revolution]\n\t[Heroic Technology]\n\t[Heroic Hood]\n\t[Bad Funeral ]\n\t[Alone Dirt]\n\t[Bad Hood]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Electric Funeral ]\n\t[Bad Dirt]\n\t[Bad Dreams]\n\t[Dynamic Dirt]\n\t[Blue Guide]\n\t[Teen Hood]\n\t[Groovy Revolution]\n\t[Heroic Technology]\n\t[Heroic Hood]\n\t[Bad Funeral ]\n\t[Groovy Hood]\n\t[Chill Dirt]\n\t[Electric Revolution]\n\t[Alone Dirt]\n\t[Teen Guide]\n\t[Bad Hood]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "irene33",
   "command" : "changePage",
@@ -21926,17 +21926,17 @@
   "user" : "alice22",
   "command" : "printCurrentPage",
   "timestamp" : 12870,
-  "message" : "Albums:\n\t[Breezy View]\n\t[Blue Autumn]\n\t[Groovy Funeral ]\n\t[Bad Autumn]\n\t[Groovy Technology]\n\t[Alone Technology]\n\t[Heroic Funeral ]\n\t[Groovy View]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Breezy View]\n\t[Blue Autumn]\n\t[Groovy Funeral ]\n\t[Bad Autumn]\n\t[Teen Hood]\n\t[Groovy Technology]\n\t[Alone Technology]\n\t[Groovy Dreams]\n\t[Heroic Funeral ]\n\t[Groovy View]\n\t[Heroic Harmonies]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "cbutler",
   "command" : "addAlbum",
   "timestamp" : 12870,
-  "message" : "cbutler has another album with the same name."
+  "message" : "cbutler has added new album successfully."
 }, {
   "user" : "alice22",
   "command" : "printCurrentPage",
   "timestamp" : 12870,
-  "message" : "Albums:\n\t[Breezy View]\n\t[Blue Autumn]\n\t[Groovy Funeral ]\n\t[Bad Autumn]\n\t[Groovy Technology]\n\t[Alone Technology]\n\t[Heroic Funeral ]\n\t[Groovy View]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Breezy View]\n\t[Blue Autumn]\n\t[Groovy Funeral ]\n\t[Bad Autumn]\n\t[Teen Hood]\n\t[Groovy Technology]\n\t[Alone Technology]\n\t[Groovy Dreams]\n\t[Heroic Funeral ]\n\t[Groovy View]\n\t[Heroic Harmonies]\n\t[Electric Revolution]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "alice22",
   "command" : "changePage",
@@ -21998,7 +21998,7 @@
   "user" : "carol19",
   "command" : "printCurrentPage",
   "timestamp" : 12890,
-  "message" : "Albums:\n\t[Alone Hood]\n\t[Teen Revolution]\n\t[Electric Dreams]\n\t[Chill Technology]\n\t[Teen Autumn]\n\t[Groovy Dirt]\n\t[Heroic View]\n\t[Heroic Harmonies]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Alone Hood]\n\t[Teen Revolution]\n\t[Blue Technology]\n\t[Groovy Harmonies]\n\t[Electric Dreams]\n\t[Blue Guide]\n\t[Chill Technology]\n\t[Teen Autumn]\n\t[Groovy Dirt]\n\t[Heroic View]\n\t[Electric Technology]\n\t[Heroic Harmonies]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "glester",
   "command" : "addAlbum",
@@ -22008,7 +22008,7 @@
   "user" : "carol19",
   "command" : "printCurrentPage",
   "timestamp" : 12890,
-  "message" : "Albums:\n\t[Alone Hood]\n\t[Teen Revolution]\n\t[Electric Dreams]\n\t[Chill Technology]\n\t[Teen Autumn]\n\t[Groovy Dirt]\n\t[Heroic View]\n\t[Heroic Harmonies]\n\t[Heroic Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Alone Hood]\n\t[Teen Revolution]\n\t[Blue Technology]\n\t[Groovy Harmonies]\n\t[Electric Dreams]\n\t[Blue Guide]\n\t[Chill Technology]\n\t[Teen Autumn]\n\t[Groovy Dirt]\n\t[Heroic View]\n\t[Electric Technology]\n\t[Heroic Harmonies]\n\t[Heroic Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "carol19",
   "command" : "changePage",
@@ -22070,7 +22070,7 @@
   "user" : "emily30",
   "command" : "printCurrentPage",
   "timestamp" : 12910,
-  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Chill Dirt]\n\t[Breezy Harmonies]\n\t[Electric Technology]\n\t[Electric Revolution]\n\t[Bad Harmonies]\n\t[Groovy Guide]\n\t[Dynamic Autumn]\n\t[Chill Hood]\n\t[Breezy Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Alone Hood]\n\t[Chill Dirt]\n\t[Breezy Harmonies]\n\t[Electric Technology]\n\t[Electric Revolution]\n\t[Electric Dreams]\n\t[Bad Harmonies]\n\t[Groovy Guide]\n\t[Dynamic Autumn]\n\t[Chill Hood]\n\t[Breezy Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "mccarthyluis",
   "command" : "addAlbum",
@@ -22080,7 +22080,7 @@
   "user" : "emily30",
   "command" : "printCurrentPage",
   "timestamp" : 12910,
-  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Chill Dirt]\n\t[Breezy Harmonies]\n\t[Electric Technology]\n\t[Electric Revolution]\n\t[Bad Harmonies]\n\t[Groovy Guide]\n\t[Dynamic Autumn]\n\t[Chill Hood]\n\t[Breezy Autumn]\n\t[Alone Guide]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Alone Hood]\n\t[Chill Dirt]\n\t[Breezy Harmonies]\n\t[Electric Technology]\n\t[Electric Revolution]\n\t[Electric Dreams]\n\t[Bad Harmonies]\n\t[Groovy Guide]\n\t[Dynamic Autumn]\n\t[Chill Hood]\n\t[Breezy Autumn]\n\t[Alone Guide]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "emily30",
   "command" : "changePage",
@@ -22358,7 +22358,7 @@
   "user" : "carol19",
   "command" : "printCurrentPage",
   "timestamp" : 12990,
-  "message" : "Albums:\n\t[Alone Hood]\n\t[Teen Revolution]\n\t[Electric Dreams]\n\t[Chill Technology]\n\t[Teen Autumn]\n\t[Groovy Dirt]\n\t[Heroic View]\n\t[Heroic Harmonies]\n\t[Heroic Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Alone Hood]\n\t[Teen Revolution]\n\t[Blue Technology]\n\t[Groovy Harmonies]\n\t[Electric Dreams]\n\t[Blue Guide]\n\t[Chill Technology]\n\t[Teen Autumn]\n\t[Groovy Dirt]\n\t[Heroic View]\n\t[Electric Technology]\n\t[Heroic Harmonies]\n\t[Heroic Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "glester",
   "command" : "addAlbum",
@@ -22368,7 +22368,7 @@
   "user" : "carol19",
   "command" : "printCurrentPage",
   "timestamp" : 12990,
-  "message" : "Albums:\n\t[Alone Hood]\n\t[Teen Revolution]\n\t[Electric Dreams]\n\t[Chill Technology]\n\t[Teen Autumn]\n\t[Groovy Dirt]\n\t[Heroic View]\n\t[Heroic Harmonies]\n\t[Heroic Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Alone Hood]\n\t[Teen Revolution]\n\t[Blue Technology]\n\t[Groovy Harmonies]\n\t[Electric Dreams]\n\t[Blue Guide]\n\t[Chill Technology]\n\t[Teen Autumn]\n\t[Groovy Dirt]\n\t[Heroic View]\n\t[Electric Technology]\n\t[Heroic Harmonies]\n\t[Heroic Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "carol19",
   "command" : "changePage",
@@ -22394,17 +22394,17 @@
   "user" : "david27",
   "command" : "printCurrentPage",
   "timestamp" : 13000,
-  "message" : "Albums:\n\t[Breezy View]\n\t[Blue Autumn]\n\t[Groovy Funeral ]\n\t[Bad Autumn]\n\t[Groovy Technology]\n\t[Alone Technology]\n\t[Heroic Funeral ]\n\t[Groovy View]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Breezy View]\n\t[Blue Autumn]\n\t[Groovy Funeral ]\n\t[Bad Autumn]\n\t[Teen Hood]\n\t[Groovy Technology]\n\t[Alone Technology]\n\t[Groovy Dreams]\n\t[Heroic Funeral ]\n\t[Groovy View]\n\t[Heroic Harmonies]\n\t[Electric Revolution]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "cbutler",
   "command" : "addAlbum",
   "timestamp" : 13000,
-  "message" : "cbutler has another album with the same name."
+  "message" : "cbutler has added new album successfully."
 }, {
   "user" : "david27",
   "command" : "printCurrentPage",
   "timestamp" : 13000,
-  "message" : "Albums:\n\t[Breezy View]\n\t[Blue Autumn]\n\t[Groovy Funeral ]\n\t[Bad Autumn]\n\t[Groovy Technology]\n\t[Alone Technology]\n\t[Heroic Funeral ]\n\t[Groovy View]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Breezy View]\n\t[Blue Autumn]\n\t[Groovy Funeral ]\n\t[Bad Autumn]\n\t[Teen Hood]\n\t[Groovy Technology]\n\t[Alone Technology]\n\t[Groovy Dreams]\n\t[Heroic Funeral ]\n\t[Groovy View]\n\t[Heroic Harmonies]\n\t[Electric Revolution]\n\t[Groovy Guide]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "david27",
   "command" : "changePage",
@@ -22466,17 +22466,17 @@
   "user" : "frank21",
   "command" : "printCurrentPage",
   "timestamp" : 13020,
-  "message" : "Albums:\n\t[Breezy View]\n\t[Blue Autumn]\n\t[Groovy Funeral ]\n\t[Bad Autumn]\n\t[Groovy Technology]\n\t[Alone Technology]\n\t[Heroic Funeral ]\n\t[Groovy View]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Breezy View]\n\t[Blue Autumn]\n\t[Groovy Funeral ]\n\t[Bad Autumn]\n\t[Teen Hood]\n\t[Groovy Technology]\n\t[Alone Technology]\n\t[Groovy Dreams]\n\t[Heroic Funeral ]\n\t[Groovy View]\n\t[Heroic Harmonies]\n\t[Electric Revolution]\n\t[Groovy Guide]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "cbutler",
   "command" : "addAlbum",
   "timestamp" : 13020,
-  "message" : "cbutler has another album with the same name."
+  "message" : "cbutler has added new album successfully."
 }, {
   "user" : "frank21",
   "command" : "printCurrentPage",
   "timestamp" : 13020,
-  "message" : "Albums:\n\t[Breezy View]\n\t[Blue Autumn]\n\t[Groovy Funeral ]\n\t[Bad Autumn]\n\t[Groovy Technology]\n\t[Alone Technology]\n\t[Heroic Funeral ]\n\t[Groovy View]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Breezy View]\n\t[Blue Autumn]\n\t[Groovy Funeral ]\n\t[Bad Autumn]\n\t[Teen Hood]\n\t[Groovy Technology]\n\t[Alone Technology]\n\t[Groovy Dreams]\n\t[Heroic Funeral ]\n\t[Groovy View]\n\t[Heroic Harmonies]\n\t[Electric Revolution]\n\t[Groovy Guide]\n\t[Electric Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "frank21",
   "command" : "changePage",
@@ -22538,17 +22538,17 @@
   "user" : "henry26",
   "command" : "printCurrentPage",
   "timestamp" : 13040,
-  "message" : "Albums:\n\t[Electric Funeral ]\n\t[Bad Dirt]\n\t[Bad Dreams]\n\t[Dynamic Dirt]\n\t[Blue Guide]\n\t[Groovy Revolution]\n\t[Heroic Technology]\n\t[Heroic Hood]\n\t[Bad Funeral ]\n\t[Alone Dirt]\n\t[Bad Hood]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Electric Funeral ]\n\t[Bad Dirt]\n\t[Bad Dreams]\n\t[Dynamic Dirt]\n\t[Blue Guide]\n\t[Teen Hood]\n\t[Groovy Revolution]\n\t[Heroic Technology]\n\t[Heroic Hood]\n\t[Bad Funeral ]\n\t[Groovy Hood]\n\t[Chill Dirt]\n\t[Electric Revolution]\n\t[Alone Dirt]\n\t[Teen Guide]\n\t[Bad Hood]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "jacobdean",
   "command" : "addAlbum",
   "timestamp" : 13040,
-  "message" : "jacobdean has another album with the same name."
+  "message" : "jacobdean has added new album successfully."
 }, {
   "user" : "henry26",
   "command" : "printCurrentPage",
   "timestamp" : 13040,
-  "message" : "Albums:\n\t[Electric Funeral ]\n\t[Bad Dirt]\n\t[Bad Dreams]\n\t[Dynamic Dirt]\n\t[Blue Guide]\n\t[Groovy Revolution]\n\t[Heroic Technology]\n\t[Heroic Hood]\n\t[Bad Funeral ]\n\t[Alone Dirt]\n\t[Bad Hood]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Electric Funeral ]\n\t[Bad Dirt]\n\t[Bad Dreams]\n\t[Dynamic Dirt]\n\t[Blue Guide]\n\t[Teen Hood]\n\t[Groovy Revolution]\n\t[Heroic Technology]\n\t[Heroic Hood]\n\t[Bad Funeral ]\n\t[Groovy Hood]\n\t[Chill Dirt]\n\t[Electric Revolution]\n\t[Alone Dirt]\n\t[Teen Guide]\n\t[Bad Hood]\n\t[Heroic View]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "henry26",
   "command" : "changePage",
@@ -22574,7 +22574,7 @@
   "user" : "irene33",
   "command" : "printCurrentPage",
   "timestamp" : 13050,
-  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Chill Dirt]\n\t[Breezy Harmonies]\n\t[Electric Technology]\n\t[Electric Revolution]\n\t[Bad Harmonies]\n\t[Groovy Guide]\n\t[Dynamic Autumn]\n\t[Chill Hood]\n\t[Breezy Autumn]\n\t[Alone Guide]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Alone Hood]\n\t[Chill Dirt]\n\t[Breezy Harmonies]\n\t[Electric Technology]\n\t[Electric Revolution]\n\t[Electric Dreams]\n\t[Bad Harmonies]\n\t[Groovy Guide]\n\t[Dynamic Autumn]\n\t[Chill Hood]\n\t[Breezy Autumn]\n\t[Alone Guide]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "mccarthyluis",
   "command" : "addAlbum",
@@ -22584,7 +22584,7 @@
   "user" : "irene33",
   "command" : "printCurrentPage",
   "timestamp" : 13050,
-  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Chill Dirt]\n\t[Breezy Harmonies]\n\t[Electric Technology]\n\t[Electric Revolution]\n\t[Bad Harmonies]\n\t[Groovy Guide]\n\t[Dynamic Autumn]\n\t[Chill Hood]\n\t[Breezy Autumn]\n\t[Alone Guide]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Alone Hood]\n\t[Chill Dirt]\n\t[Breezy Harmonies]\n\t[Electric Technology]\n\t[Electric Revolution]\n\t[Electric Dreams]\n\t[Bad Harmonies]\n\t[Groovy Guide]\n\t[Dynamic Autumn]\n\t[Chill Hood]\n\t[Breezy Autumn]\n\t[Alone Guide]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "irene33",
   "command" : "changePage",
@@ -22610,17 +22610,17 @@
   "user" : "jack29",
   "command" : "printCurrentPage",
   "timestamp" : 13060,
-  "message" : "Albums:\n\t[Electric Funeral ]\n\t[Bad Dirt]\n\t[Bad Dreams]\n\t[Dynamic Dirt]\n\t[Blue Guide]\n\t[Groovy Revolution]\n\t[Heroic Technology]\n\t[Heroic Hood]\n\t[Bad Funeral ]\n\t[Alone Dirt]\n\t[Bad Hood]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Electric Funeral ]\n\t[Bad Dirt]\n\t[Bad Dreams]\n\t[Dynamic Dirt]\n\t[Blue Guide]\n\t[Teen Hood]\n\t[Groovy Revolution]\n\t[Heroic Technology]\n\t[Heroic Hood]\n\t[Bad Funeral ]\n\t[Groovy Hood]\n\t[Chill Dirt]\n\t[Electric Revolution]\n\t[Alone Dirt]\n\t[Teen Guide]\n\t[Bad Hood]\n\t[Heroic View]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "jacobdean",
   "command" : "addAlbum",
   "timestamp" : 13060,
-  "message" : "jacobdean has another album with the same name."
+  "message" : "jacobdean has added new album successfully."
 }, {
   "user" : "jack29",
   "command" : "printCurrentPage",
   "timestamp" : 13060,
-  "message" : "Albums:\n\t[Electric Funeral ]\n\t[Bad Dirt]\n\t[Bad Dreams]\n\t[Dynamic Dirt]\n\t[Blue Guide]\n\t[Groovy Revolution]\n\t[Heroic Technology]\n\t[Heroic Hood]\n\t[Bad Funeral ]\n\t[Alone Dirt]\n\t[Bad Hood]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Electric Funeral ]\n\t[Bad Dirt]\n\t[Bad Dreams]\n\t[Dynamic Dirt]\n\t[Blue Guide]\n\t[Teen Hood]\n\t[Groovy Revolution]\n\t[Heroic Technology]\n\t[Heroic Hood]\n\t[Bad Funeral ]\n\t[Groovy Hood]\n\t[Chill Dirt]\n\t[Electric Revolution]\n\t[Alone Dirt]\n\t[Teen Guide]\n\t[Bad Hood]\n\t[Heroic View]\n\t[Teen Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "jack29",
   "command" : "changePage",
@@ -22646,17 +22646,17 @@
   "user" : "alice22",
   "command" : "printCurrentPage",
   "timestamp" : 13070,
-  "message" : "Albums:\n\t[Breezy View]\n\t[Blue Autumn]\n\t[Groovy Funeral ]\n\t[Bad Autumn]\n\t[Groovy Technology]\n\t[Alone Technology]\n\t[Heroic Funeral ]\n\t[Groovy View]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Breezy View]\n\t[Blue Autumn]\n\t[Groovy Funeral ]\n\t[Bad Autumn]\n\t[Teen Hood]\n\t[Groovy Technology]\n\t[Alone Technology]\n\t[Groovy Dreams]\n\t[Heroic Funeral ]\n\t[Groovy View]\n\t[Heroic Harmonies]\n\t[Electric Revolution]\n\t[Groovy Guide]\n\t[Electric Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "cbutler",
   "command" : "addAlbum",
   "timestamp" : 13070,
-  "message" : "cbutler has another album with the same name."
+  "message" : "cbutler has added new album successfully."
 }, {
   "user" : "alice22",
   "command" : "printCurrentPage",
   "timestamp" : 13070,
-  "message" : "Albums:\n\t[Breezy View]\n\t[Blue Autumn]\n\t[Groovy Funeral ]\n\t[Bad Autumn]\n\t[Groovy Technology]\n\t[Alone Technology]\n\t[Heroic Funeral ]\n\t[Groovy View]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Breezy View]\n\t[Blue Autumn]\n\t[Groovy Funeral ]\n\t[Bad Autumn]\n\t[Teen Hood]\n\t[Groovy Technology]\n\t[Alone Technology]\n\t[Groovy Dreams]\n\t[Heroic Funeral ]\n\t[Groovy View]\n\t[Heroic Harmonies]\n\t[Electric Revolution]\n\t[Groovy Guide]\n\t[Electric Technology]\n\t[Dynamic Dirt]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "alice22",
   "command" : "changePage",
@@ -22718,7 +22718,7 @@
   "user" : "carol19",
   "command" : "printCurrentPage",
   "timestamp" : 13090,
-  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Chill Dirt]\n\t[Breezy Harmonies]\n\t[Electric Technology]\n\t[Electric Revolution]\n\t[Bad Harmonies]\n\t[Groovy Guide]\n\t[Dynamic Autumn]\n\t[Chill Hood]\n\t[Breezy Autumn]\n\t[Alone Guide]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Alone Hood]\n\t[Chill Dirt]\n\t[Breezy Harmonies]\n\t[Electric Technology]\n\t[Electric Revolution]\n\t[Electric Dreams]\n\t[Bad Harmonies]\n\t[Groovy Guide]\n\t[Dynamic Autumn]\n\t[Chill Hood]\n\t[Breezy Autumn]\n\t[Alone Guide]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "mccarthyluis",
   "command" : "addAlbum",
@@ -22728,7 +22728,7 @@
   "user" : "carol19",
   "command" : "printCurrentPage",
   "timestamp" : 13090,
-  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Chill Dirt]\n\t[Breezy Harmonies]\n\t[Electric Technology]\n\t[Electric Revolution]\n\t[Bad Harmonies]\n\t[Groovy Guide]\n\t[Dynamic Autumn]\n\t[Chill Hood]\n\t[Breezy Autumn]\n\t[Alone Guide]\n\t[Blue Dirt]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Alone Hood]\n\t[Chill Dirt]\n\t[Breezy Harmonies]\n\t[Electric Technology]\n\t[Electric Revolution]\n\t[Electric Dreams]\n\t[Bad Harmonies]\n\t[Groovy Guide]\n\t[Dynamic Autumn]\n\t[Chill Hood]\n\t[Breezy Autumn]\n\t[Alone Guide]\n\t[Blue Dirt]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "carol19",
   "command" : "changePage",
@@ -22934,7 +22934,7 @@
   "user" : "irene33",
   "command" : "printCurrentPage",
   "timestamp" : 13150,
-  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Chill Dirt]\n\t[Breezy Harmonies]\n\t[Electric Technology]\n\t[Electric Revolution]\n\t[Bad Harmonies]\n\t[Groovy Guide]\n\t[Dynamic Autumn]\n\t[Chill Hood]\n\t[Breezy Autumn]\n\t[Alone Guide]\n\t[Blue Dirt]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Alone Hood]\n\t[Chill Dirt]\n\t[Breezy Harmonies]\n\t[Electric Technology]\n\t[Electric Revolution]\n\t[Electric Dreams]\n\t[Bad Harmonies]\n\t[Groovy Guide]\n\t[Dynamic Autumn]\n\t[Chill Hood]\n\t[Breezy Autumn]\n\t[Alone Guide]\n\t[Blue Dirt]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "mccarthyluis",
   "command" : "addAlbum",
@@ -22944,7 +22944,7 @@
   "user" : "irene33",
   "command" : "printCurrentPage",
   "timestamp" : 13150,
-  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Chill Dirt]\n\t[Breezy Harmonies]\n\t[Electric Technology]\n\t[Electric Revolution]\n\t[Bad Harmonies]\n\t[Groovy Guide]\n\t[Dynamic Autumn]\n\t[Chill Hood]\n\t[Breezy Autumn]\n\t[Alone Guide]\n\t[Blue Dirt]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Alone Hood]\n\t[Chill Dirt]\n\t[Breezy Harmonies]\n\t[Electric Technology]\n\t[Electric Revolution]\n\t[Electric Dreams]\n\t[Bad Harmonies]\n\t[Groovy Guide]\n\t[Dynamic Autumn]\n\t[Chill Hood]\n\t[Breezy Autumn]\n\t[Alone Guide]\n\t[Blue Dirt]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "irene33",
   "command" : "changePage",
@@ -22970,17 +22970,17 @@
   "user" : "jack29",
   "command" : "printCurrentPage",
   "timestamp" : 13160,
-  "message" : "Albums:\n\t[Alone Hood]\n\t[Teen Revolution]\n\t[Electric Dreams]\n\t[Chill Technology]\n\t[Teen Autumn]\n\t[Groovy Dirt]\n\t[Heroic View]\n\t[Heroic Harmonies]\n\t[Heroic Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Alone Hood]\n\t[Teen Revolution]\n\t[Blue Technology]\n\t[Groovy Harmonies]\n\t[Electric Dreams]\n\t[Blue Guide]\n\t[Chill Technology]\n\t[Teen Autumn]\n\t[Groovy Dirt]\n\t[Heroic View]\n\t[Electric Technology]\n\t[Heroic Harmonies]\n\t[Heroic Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "glester",
   "command" : "addAlbum",
   "timestamp" : 13160,
-  "message" : "glester has another album with the same name."
+  "message" : "glester has added new album successfully."
 }, {
   "user" : "jack29",
   "command" : "printCurrentPage",
   "timestamp" : 13160,
-  "message" : "Albums:\n\t[Alone Hood]\n\t[Teen Revolution]\n\t[Electric Dreams]\n\t[Chill Technology]\n\t[Teen Autumn]\n\t[Groovy Dirt]\n\t[Heroic View]\n\t[Heroic Harmonies]\n\t[Heroic Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Alone Hood]\n\t[Teen Revolution]\n\t[Blue Technology]\n\t[Groovy Harmonies]\n\t[Electric Dreams]\n\t[Blue Guide]\n\t[Chill Technology]\n\t[Teen Autumn]\n\t[Groovy Dirt]\n\t[Heroic View]\n\t[Electric Technology]\n\t[Heroic Harmonies]\n\t[Heroic Autumn]\n\t[Chill Hood]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "jack29",
   "command" : "changePage",
@@ -23042,7 +23042,7 @@
   "user" : "bob35",
   "command" : "printCurrentPage",
   "timestamp" : 13180,
-  "message" : "Albums:\n\t[Breezy View]\n\t[Blue Autumn]\n\t[Groovy Funeral ]\n\t[Bad Autumn]\n\t[Groovy Technology]\n\t[Alone Technology]\n\t[Heroic Funeral ]\n\t[Groovy View]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Breezy View]\n\t[Blue Autumn]\n\t[Groovy Funeral ]\n\t[Bad Autumn]\n\t[Teen Hood]\n\t[Groovy Technology]\n\t[Alone Technology]\n\t[Groovy Dreams]\n\t[Heroic Funeral ]\n\t[Groovy View]\n\t[Heroic Harmonies]\n\t[Electric Revolution]\n\t[Groovy Guide]\n\t[Electric Technology]\n\t[Dynamic Dirt]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "cbutler",
   "command" : "addAlbum",
@@ -23052,7 +23052,7 @@
   "user" : "bob35",
   "command" : "printCurrentPage",
   "timestamp" : 13180,
-  "message" : "Albums:\n\t[Breezy View]\n\t[Blue Autumn]\n\t[Groovy Funeral ]\n\t[Bad Autumn]\n\t[Groovy Technology]\n\t[Alone Technology]\n\t[Heroic Funeral ]\n\t[Groovy View]\n\t[Chill Funeral ]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Breezy View]\n\t[Blue Autumn]\n\t[Groovy Funeral ]\n\t[Bad Autumn]\n\t[Teen Hood]\n\t[Groovy Technology]\n\t[Alone Technology]\n\t[Groovy Dreams]\n\t[Heroic Funeral ]\n\t[Groovy View]\n\t[Heroic Harmonies]\n\t[Electric Revolution]\n\t[Groovy Guide]\n\t[Electric Technology]\n\t[Dynamic Dirt]\n\t[Chill Funeral ]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "bob35",
   "command" : "changePage",
@@ -23114,17 +23114,17 @@
   "user" : "david27",
   "command" : "printCurrentPage",
   "timestamp" : 13200,
-  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Chill Dirt]\n\t[Breezy Harmonies]\n\t[Electric Technology]\n\t[Electric Revolution]\n\t[Bad Harmonies]\n\t[Groovy Guide]\n\t[Dynamic Autumn]\n\t[Chill Hood]\n\t[Breezy Autumn]\n\t[Alone Guide]\n\t[Blue Dirt]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Alone Hood]\n\t[Chill Dirt]\n\t[Breezy Harmonies]\n\t[Electric Technology]\n\t[Electric Revolution]\n\t[Electric Dreams]\n\t[Bad Harmonies]\n\t[Groovy Guide]\n\t[Dynamic Autumn]\n\t[Chill Hood]\n\t[Breezy Autumn]\n\t[Alone Guide]\n\t[Blue Dirt]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "mccarthyluis",
   "command" : "addAlbum",
   "timestamp" : 13200,
-  "message" : "mccarthyluis has another album with the same name."
+  "message" : "mccarthyluis has added new album successfully."
 }, {
   "user" : "david27",
   "command" : "printCurrentPage",
   "timestamp" : 13200,
-  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Chill Dirt]\n\t[Breezy Harmonies]\n\t[Electric Technology]\n\t[Electric Revolution]\n\t[Bad Harmonies]\n\t[Groovy Guide]\n\t[Dynamic Autumn]\n\t[Chill Hood]\n\t[Breezy Autumn]\n\t[Alone Guide]\n\t[Blue Dirt]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Bad Revolution]\n\t[Groovy Harmonies]\n\t[Teen Harmonies]\n\t[Chill Autumn]\n\t[Alone Hood]\n\t[Chill Dirt]\n\t[Breezy Harmonies]\n\t[Electric Technology]\n\t[Electric Revolution]\n\t[Electric Dreams]\n\t[Bad Harmonies]\n\t[Groovy Guide]\n\t[Dynamic Autumn]\n\t[Chill Hood]\n\t[Breezy Autumn]\n\t[Alone Guide]\n\t[Blue Dirt]\n\t[Groovy Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "david27",
   "command" : "changePage",
@@ -23186,7 +23186,7 @@
   "user" : "frank21",
   "command" : "printCurrentPage",
   "timestamp" : 13220,
-  "message" : "Albums:\n\t[Electric Funeral ]\n\t[Bad Dirt]\n\t[Bad Dreams]\n\t[Dynamic Dirt]\n\t[Blue Guide]\n\t[Groovy Revolution]\n\t[Heroic Technology]\n\t[Heroic Hood]\n\t[Bad Funeral ]\n\t[Alone Dirt]\n\t[Bad Hood]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Electric Funeral ]\n\t[Bad Dirt]\n\t[Bad Dreams]\n\t[Dynamic Dirt]\n\t[Blue Guide]\n\t[Teen Hood]\n\t[Groovy Revolution]\n\t[Heroic Technology]\n\t[Heroic Hood]\n\t[Bad Funeral ]\n\t[Groovy Hood]\n\t[Chill Dirt]\n\t[Electric Revolution]\n\t[Alone Dirt]\n\t[Teen Guide]\n\t[Bad Hood]\n\t[Heroic View]\n\t[Teen Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "jacobdean",
   "command" : "addAlbum",
@@ -23196,7 +23196,7 @@
   "user" : "frank21",
   "command" : "printCurrentPage",
   "timestamp" : 13220,
-  "message" : "Albums:\n\t[Electric Funeral ]\n\t[Bad Dirt]\n\t[Bad Dreams]\n\t[Dynamic Dirt]\n\t[Blue Guide]\n\t[Groovy Revolution]\n\t[Heroic Technology]\n\t[Heroic Hood]\n\t[Bad Funeral ]\n\t[Alone Dirt]\n\t[Bad Hood]\n\t[Chill Dreams]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Electric Funeral ]\n\t[Bad Dirt]\n\t[Bad Dreams]\n\t[Dynamic Dirt]\n\t[Blue Guide]\n\t[Teen Hood]\n\t[Groovy Revolution]\n\t[Heroic Technology]\n\t[Heroic Hood]\n\t[Bad Funeral ]\n\t[Groovy Hood]\n\t[Chill Dirt]\n\t[Electric Revolution]\n\t[Alone Dirt]\n\t[Teen Guide]\n\t[Bad Hood]\n\t[Heroic View]\n\t[Teen Technology]\n\t[Chill Dreams]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "frank21",
   "command" : "changePage",
@@ -23263,12 +23263,12 @@
   "user" : "amanda16",
   "command" : "addAlbum",
   "timestamp" : 13240,
-  "message" : "amanda16 has another album with the same name."
+  "message" : "amanda16 has added new album successfully."
 }, {
   "user" : "henry26",
   "command" : "printCurrentPage",
   "timestamp" : 13240,
-  "message" : "Albums:\n\t[Groovy Hood]\n\t[Teen Guide]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
+  "message" : "Albums:\n\t[Groovy Hood]\n\t[Teen Guide]\n\t[Alone Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t[]\n"
 }, {
   "user" : "henry26",
   "command" : "changePage",
@@ -25963,4 +25963,12 @@
   "command" : "getTop5Songs",
   "timestamp" : 14850,
   "result" : [ "Soul Pandora", "Adventure Infinity", "Starlight Rapture", "Pinnacle Cascade", "Heart Utopia" ]
+}, {
+  "command" : "getTop5Albums",
+  "timestamp" : 14850,
+  "result" : [ "Bad Dirt", "Teen Revolution", "Breezy View", "Groovy Harmonies", "Teen Technology" ]
+}, {
+  "command" : "getTop5Artists",
+  "timestamp" : 14850,
+  "result" : [ "jacobdean", "glester", "jsimpson", "mccarthyluis", "amanda16" ]
 } ]

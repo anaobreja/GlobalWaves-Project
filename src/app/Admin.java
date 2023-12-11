@@ -270,6 +270,8 @@ public final class Admin {
         return topSongs;
     }
 
+
+
     /**
      * Gets top 5 playlists.
      *
@@ -308,10 +310,6 @@ public final class Admin {
                     return username + " can't be deleted.";
                 }
 
-//                for (int i : audioCollection.getSize()) {
-//                   AudioFile audioFile1 = audioCollection.getTrackByIndex(i);
-//                   if (audioFile1)
-//                }
             }
 
             if (userAux.getPageOwner() != null && userAux.getPageOwner().equals(username))

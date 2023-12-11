@@ -33,7 +33,6 @@ public class Artist extends User {
         super(username, age, city, userType);
         this.artistPage = new ArtistPage(new ArrayList<>(), new ArrayList<>(),
                 new ArrayList<>());
-        this.eventValidator = new EventValidator();
     }
     private static Song converseSong (SongInput songInput) {
         String name = songInput.getName();
@@ -62,7 +61,8 @@ public class Artist extends User {
 
         Album album = new Album(name, owner, songsResult, releaseYear, timestamp);
 
-        for (Album album1 : Admin.getAlbums()) {
+        Artist artist = Admin.getArtist(owner);
+        for (Album album1 : artist.getArtistPage().getAlbums()) {
             if (album1.getName().equals(album.getName()))
                     return owner + " has another album with the same name.";
         }

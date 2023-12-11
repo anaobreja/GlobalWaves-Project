@@ -25,16 +25,16 @@ import java.util.List;
  */
 @Getter
 public class NormalUser extends User {
+    private final Player player;
+    private final SearchBar searchBar;
+    public boolean online;
     @Getter
     private ArrayList<Playlist> playlists;
     @Getter
     private ArrayList<Song> likedSongs;
     @Getter
     private ArrayList<Playlist> followedPlaylists;
-    private final Player player;
-    private final SearchBar searchBar;
     private boolean lastSearched;
-    public boolean online;
     private String pageType;
     private String pageOwner;
 
@@ -56,7 +56,6 @@ public class NormalUser extends User {
         online = true;
         pageType = "homePage";
     }
-
 
 
     /**
@@ -301,7 +300,7 @@ public class NormalUser extends User {
         }
 
         if (!player.getType().equals("song") && !player.getType().equals("playlist")
-        && !player.getType().equals("album")) {
+                && !player.getType().equals("album")) {
             return "Loaded source is not a song.";
         }
 
@@ -587,15 +586,15 @@ public class NormalUser extends User {
             case "homePage" -> page = new HomePage(likedSongs, followedPlaylists);
             case "likedContentPage" -> page = new LikedContentPage(likedSongs, followedPlaylists);
             case "artistPage" -> {
-                    String artistName = pageOwner;
-                    Artist artist = Admin.getArtist(artistName);
-                    page = artist.getArtistPage();
+                String artistName = pageOwner;
+                Artist artist = Admin.getArtist(artistName);
+                page = artist.getArtistPage();
             }
             case "hostPage" -> {
-                    String hostName = pageOwner;
-                    Host host = Admin.getHosts(hostName);
-                    page = host.getHostPage();
-                }
+                String hostName = pageOwner;
+                Host host = Admin.getHosts(hostName);
+                page = host.getHostPage();
+            }
         }
         if (page == null)
             return null;
@@ -608,8 +607,14 @@ public class NormalUser extends User {
         }
 
         switch (type) {
-            case "Home" -> pageType = "homePage";
-            case "LikedContent" -> pageType = "likedContentPage";
+            case "Home" -> {
+                pageType = "homePage";
+                pageOwner = "";
+            }
+            case "LikedContent" -> {
+                pageOwner = "";
+                pageType = "likedContentPage";
+            }
             default -> {
                 return super.getName() + " is trying to access a non-existent page.";
             }
