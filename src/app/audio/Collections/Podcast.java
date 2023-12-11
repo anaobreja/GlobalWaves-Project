@@ -2,8 +2,10 @@ package app.audio.Collections;
 
 import app.audio.Files.AudioFile;
 import app.audio.Files.Episode;
+import app.audio.Files.Song;
 import lombok.Getter;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Getter
@@ -28,4 +30,10 @@ public final class Podcast extends AudioCollection {
     public AudioFile getTrackByIndex(final int index) {
         return episodes.get(index);
     }
+
+    @Override
+    public ArrayList<Song> getSongs() {
+        return null;
+    }
+
 }

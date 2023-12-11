@@ -735,18 +735,14 @@ public final class CommandRunner {
         if (name == null)
             message = "The username " + commandInput.getUsername() + " doesn't exist.";
         else {
-            Artist artist = Admin.getArtist(commandInput.getUsername());
+           Artist artist = Admin.getArtist(commandInput.getUsername());
 
             if (artist == null)
-                message = commandInput.getUsername() + " is not an artist.";
+                message = commandInput.getUsername() + " is not a host.";
             else {
-                String description = commandInput.getDescription();
-                String date = commandInput.getDate();
-                int timestamp = commandInput.getTimestamp();
-                String owner = commandInput.getUsername();
                 name = commandInput.getName();
-
-                message = artist.addEvent(name, owner, description, date, timestamp);
+                String username = commandInput.getUsername();
+                message = artist.revomeEvent(name, username);
             }
         }
 
@@ -759,7 +755,6 @@ public final class CommandRunner {
 
         return objectNode;
     }
-
     public static ObjectNode addMerch(final CommandInput commandInput) {
         String message;
         String name = Admin.getName(commandInput.getUsername());

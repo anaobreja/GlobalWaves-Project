@@ -226,9 +226,11 @@ public class NormalUser extends User {
             return "Please load a source before using the shuffle function.";
         }
 
-        if (!player.getType().equals("playlist")) {
+        if (!player.getType().equals("playlist") &&
+                !player.getType().equals("album")) {
             return "The loaded source is not a playlist or an album.";
         }
+
 
         if (!online) {
             return super.getName() + " is offline.";
@@ -298,7 +300,8 @@ public class NormalUser extends User {
             return "Please load a source before liking or unliking.";
         }
 
-        if (!player.getType().equals("song") && !player.getType().equals("playlist")) {
+        if (!player.getType().equals("song") && !player.getType().equals("playlist")
+        && !player.getType().equals("album")) {
             return "Loaded source is not a song.";
         }
 

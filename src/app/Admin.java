@@ -9,6 +9,7 @@ import app.user.Artist;
 import app.user.Host;
 import app.user.NormalUser;
 import app.user.User;
+import app.utils.Enums;
 import fileio.input.EpisodeInput;
 import fileio.input.PodcastInput;
 import fileio.input.SongInput;
@@ -301,11 +302,16 @@ public final class Admin {
                 AudioCollection audioCollection = source.getAudioCollection();
                 AudioFile audioFile = source.getAudioFile();
 
-                if ((audioCollection != null && audioCollection.getOwner().equals(username)) ||
+                if ((audioCollection != null && audioCollection.getOwner().equals(username))  ||
                         (audioFile != null && audioFile.getArtist() != null
                 &&audioFile.getArtist().equals(username))) {
                     return username + " can't be deleted.";
                 }
+
+//                for (int i : audioCollection.getSize()) {
+//                   AudioFile audioFile1 = audioCollection.getTrackByIndex(i);
+//                   if (audioFile1)
+//                }
             }
 
             if (userAux.getPageOwner() != null && userAux.getPageOwner().equals(username))

@@ -7,6 +7,7 @@ import app.audio.Files.Episode;
 import app.audio.Files.Song;
 import app.page.ArtistPage;
 import app.player.PlayerSource;
+import app.utils.EventValidator;
 import fileio.input.EpisodeInput;
 import fileio.input.SongInput;
 import lombok.Getter;
@@ -23,10 +24,16 @@ public class Artist extends User {
     @Getter
     @Setter
     private ArtistPage artistPage;
+
+    @Getter
+    @Setter
+    private EventValidator eventValidator;
+
     public Artist(String username, int age, String city, String userType) {
         super(username, age, city, userType);
         this.artistPage = new ArtistPage(new ArrayList<>(), new ArrayList<>(),
                 new ArrayList<>());
+        this.eventValidator = new EventValidator();
     }
     private static Song converseSong (SongInput songInput) {
         String name = songInput.getName();
@@ -83,11 +90,20 @@ public class Artist extends User {
             PlayerSource source = userAux.getPlayer().getSource();
 
             if (source != null) {
+                AudioCollection audioCollection = source.getAudioCollection();
                 AudioFile audioFile = source.getAudioFile();
-
-                if ((audioFile != null && audioFile.getAlbum() != null
-                                &&audioFile.getAlbum().equals(name))) {
+                if (audioCollection != null && audioCollection.matchesOwner(username))
                     return username + " can't delete this album.";
+                if ((audioFile != null && audioFile.getAlbum() != null
+                                && audioFile.getAlbum().equals(name))) {
+                    return username + " can't delete this album.";
+                }
+                if(audioCollection != null && audioCollection.getSongs() != null) {
+                    ArrayList<Song> songs = audioCollection.getSongs();
+                    for (Song song : songs) {
+                        if (song.matchesArtist(username))
+                            return username + " can't delete this album.";
+                    }
                 }
             }
         }
@@ -101,7 +117,7 @@ public class Artist extends User {
         }
 
         if (!hasAlbum){
-            return username + " doesn't have a podcast with the given name.";
+            return username + " doesn't have an album with the given name.";
         }
 
         Admin.getAlbums().removeIf(album -> album.getName().equals(name));
@@ -118,7 +134,8 @@ public class Artist extends User {
     public String addEvent(String name, String owner, String description, String date,
                            int timestamp) {
 
-
+        if (!EventValidator.isValidDate(date))
+            return "Event for " + owner + " does not have a valid date.";
         Event event = new Event(name, owner, description, date, timestamp);
 
         for (Event event1 : artistPage.getEvents()) {
@@ -130,6 +147,23 @@ public class Artist extends User {
 
 
         return owner + " has added new event successfully.";
+    }
+
+    public String revomeEvent(String name, String owner) {
+        Event event = null;
+
+        for (Event event1 : artistPage.getEvents()) {
+            if (event1.getName().equals(name))
+                event = event1;
+        }
+
+        if (event == null)
+            return owner + " has no event with the given name.";
+
+        artistPage.getEvents().remove(event);
+
+
+        return owner + " deleted the event successfully.";
     }
 
     public String addMerch(String name, String owner, String description, Integer price,

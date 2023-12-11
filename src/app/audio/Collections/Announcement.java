@@ -1,8 +1,11 @@
 package app.audio.Collections;
 
 import app.audio.Files.AudioFile;
+import app.audio.Files.Song;
 import lombok.Getter;
 import lombok.Setter;
+
+import java.util.ArrayList;
 
 @Getter
 @Setter
@@ -29,4 +32,10 @@ public class Announcement extends AudioCollection {
     public AudioFile getTrackByIndex(int index) {
         return null;
     }
+
+    @Override
+    public ArrayList<Song> getSongs() {
+        return null;
+    }
+
 }

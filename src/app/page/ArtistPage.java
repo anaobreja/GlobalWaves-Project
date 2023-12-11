@@ -2,6 +2,7 @@ package app.page;
 
 import app.audio.Collections.Album;
 import app.audio.Collections.Merch;
+import app.utils.EventValidator;
 import com.fasterxml.jackson.core.io.MergedStream;
 import lombok.Getter;
 import lombok.Setter;
@@ -21,7 +22,6 @@ public class ArtistPage extends Page {
     @Getter
     @Setter
     private ArrayList<Merch> merches;
-
 
     public ArtistPage(ArrayList<Album> albums, ArrayList<Event> events,
                       ArrayList<Merch> merches) {

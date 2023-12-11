@@ -1,8 +1,11 @@
 package app.audio.Collections;
 
 import app.audio.Files.AudioFile;
+import app.audio.Files.Song;
 import app.audio.LibraryEntry;
 import lombok.Getter;
+
+import java.util.ArrayList;
 
 /**
  * The type Audio collection.
@@ -45,4 +48,6 @@ public abstract class AudioCollection extends LibraryEntry {
     public boolean matchesOwner(final String user) {
         return this.getOwner().equals(user);
     }
+
+   public abstract ArrayList<Song> getSongs();
 }
