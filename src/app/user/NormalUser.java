@@ -608,8 +608,14 @@ public class NormalUser extends User {
         }
 
         switch (type) {
-            case "Home" -> pageType = "homePage";
-            case "LikedContent" -> pageType = "likedContentPage";
+            case "Home" -> {
+            pageType = "homePage";
+            pageOwner = "";
+        }
+            case "LikedContent" -> {
+                pageOwner = "";
+                pageType = "likedContentPage";
+            }
             default -> {
                 return super.getName() + " is trying to access a non-existent page.";
             }
