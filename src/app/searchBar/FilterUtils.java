@@ -1,7 +1,6 @@
 package app.searchBar;
 
 import app.audio.LibraryEntry;
-import app.user.User;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -140,8 +139,13 @@ public final class FilterUtils {
         return filter(entries, entry -> entry.matchesFollowers(followers));
     }
 
+    /**
+     * @param entries
+     * @param description
+     * @return
+     */
     public static List<LibraryEntry> filterByDescription(final List<LibraryEntry> entries,
-                                                    final String description) {
+                                                         final String description) {
         return filter(entries, entry -> entry.matchesLyrics(description));
     }
 

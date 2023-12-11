@@ -18,11 +18,19 @@ public class HostPage extends Page {
     @Setter
     private ArrayList<Announcement> announcements;
 
-    public HostPage(ArrayList<Podcast> podcasts, ArrayList<Announcement> announcements) {
+    /**
+     * @param podcasts
+     * @param announcements
+     */
+    public HostPage(final ArrayList<Podcast> podcasts,
+                    final ArrayList<Announcement> announcements) {
         this.podcasts = podcasts;
         this.announcements = announcements;
     }
 
+    /**
+     * @return
+     */
     @Override
     public String showPage() {
         StringBuilder page = new StringBuilder();
@@ -38,7 +46,8 @@ public class HostPage extends Page {
                 List<Episode> episodes = podcast.getEpisodes();
                 for (int j = 0; j < episodes.size(); j++) {
                     Episode episode = episodes.get(j);
-                    page.append(episode.getName()).append(" - ").append(episode.getDescription());
+                    page.append(episode.getName()).
+                            append(" - ").append(episode.getDescription());
                     if (j < episodes.size() - 1) {
                         page.append(", ");
                     }
@@ -53,12 +62,13 @@ public class HostPage extends Page {
 
         page.append("\nAnnouncements:\n");
         if (announcements.isEmpty()) {
-            page.append("\t[]\n");
+            page.append("\t[]");
         } else {
             page.append("\t[");
             for (int i = 0; i < announcements.size(); i++) {
                 Announcement announcement = announcements.get(i);
-                page.append(announcement.getName()).append(":\n\t").append(announcement.getDescription());
+                page.append(announcement.getName()).
+                        append(":\n\t").append(announcement.getDescription());
                 if (i < announcements.size() - 1) {
                     page.append(", ");
                 }

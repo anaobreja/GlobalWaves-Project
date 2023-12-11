@@ -19,24 +19,35 @@ public class Event extends AudioCollection {
      * @param name  the name
      * @param owner the owner
      */
-    public Event(String name, String owner, String description, String date,
-                 int timestamp) {
+    public Event(final String name, final String owner,
+                 final String description, final String date,
+                 final int timestamp) {
         super(name, owner);
         this.description = description;
         this.date = date;
         this.timestamp = timestamp;
     }
 
+    /**
+     * @return
+     */
     @Override
     public int getNumberOfTracks() {
         return 0;
     }
 
+    /**
+     * @param index the index
+     * @return
+     */
     @Override
-    public AudioFile getTrackByIndex(int index) {
+    public AudioFile getTrackByIndex(final int index) {
         return null;
     }
 
+    /**
+     * @return
+     */
     @Override
     public ArrayList<Song> getSongs() {
         return null;

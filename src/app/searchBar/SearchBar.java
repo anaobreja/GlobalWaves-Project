@@ -3,7 +3,6 @@ package app.searchBar;
 
 import app.Admin;
 import app.audio.LibraryEntry;
-import app.user.User;
 import lombok.Getter;
 
 import java.util.ArrayList;
@@ -15,9 +14,9 @@ import static app.searchBar.FilterUtils.*;
  * The type Search bar.
  */
 public final class SearchBar {
-    private List<LibraryEntry> results;
-    private final String user;
     private static final Integer MAX_RESULTS = 5;
+    private final String user;
+    private List<LibraryEntry> results;
     @Getter
     private String lastSearchType;
 
@@ -174,7 +173,7 @@ public final class SearchBar {
 
             return null;
         } else {
-            lastSelected =  this.results.get(itemNumber - 1);
+            lastSelected = this.results.get(itemNumber - 1);
             results.clear();
 
             return lastSelected;

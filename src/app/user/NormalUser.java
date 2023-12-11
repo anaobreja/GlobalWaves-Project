@@ -27,7 +27,7 @@ import java.util.List;
 public class NormalUser extends User {
     private final Player player;
     private final SearchBar searchBar;
-    public boolean online;
+    private boolean online;
     @Getter
     private ArrayList<Playlist> playlists;
     @Getter
@@ -225,8 +225,8 @@ public class NormalUser extends User {
             return "Please load a source before using the shuffle function.";
         }
 
-        if (!player.getType().equals("playlist") &&
-                !player.getType().equals("album")) {
+        if (!player.getType().equals("playlist")
+                && !player.getType().equals("album")) {
             return "The loaded source is not a playlist or an album.";
         }
 
@@ -562,18 +562,29 @@ public class NormalUser extends User {
         player.simulatePlayer(time);
     }
 
+    /**
+     * @return
+     */
     public String switchConnectionStatus() {
         online = !online;
 
         if (!online) {
-            if (player.getSource() != null)
+            if (player.getSource() != null) {
                 player.setOnline(false);
+            }
+        } else {
+            if (player.getSource() != null) {
+                player.setOnline(true);
+            }
         }
 
         return this.getName() + " has changed status successfully.";
 
     }
 
+    /**
+     * @return
+     */
     public String printCurrentPage() {
 
         if (!online) {
@@ -595,13 +606,21 @@ public class NormalUser extends User {
                 Host host = Admin.getHosts(hostName);
                 page = host.getHostPage();
             }
+            default -> {
+
+            }
         }
-        if (page == null)
+        if (page == null) {
             return null;
+        }
         return page.showPage();
     }
 
-    public String changePage(String type) {
+    /**
+     * @param type
+     * @return
+     */
+    public String changePage(final String type) {
         if (!online) {
             return super.getName() + " is offline.";
         }
@@ -621,14 +640,5 @@ public class NormalUser extends User {
         }
 
         return super.getName() + " accessed " + type + " successfully.";
-    }
-
-    public Playlist getPlaylist(String name) {
-        for (Playlist Playlist : this.getPlaylists()) {
-            if (Playlist.getName().equals(name))
-                return Playlist;
-        }
-
-        return null;
     }
 }

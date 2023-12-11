@@ -18,21 +18,32 @@ public class Announcement extends AudioCollection {
      * @param name  the name
      * @param owner the owner
      */
-    public Announcement(String name, String owner, String description) {
+    public Announcement(final String name, final String owner,
+                        final String description) {
         super(name, owner);
         this.description = description;
     }
 
+    /**
+     * @return
+     */
     @Override
     public int getNumberOfTracks() {
         return 0;
     }
 
+    /**
+     * @param index the index
+     * @return
+     */
     @Override
-    public AudioFile getTrackByIndex(int index) {
+    public AudioFile getTrackByIndex(final int index) {
         return null;
     }
 
+    /**
+     * @return
+     */
     @Override
     public ArrayList<Song> getSongs() {
         return null;

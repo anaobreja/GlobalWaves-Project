@@ -22,23 +22,35 @@ public class Merch extends AudioCollection {
      * @param owner     the owner
      * @param timestamp
      */
-    public Merch(String name, String owner, String description, Integer price, int timestamp) {
+    public Merch(final String name, final String owner,
+                 final String description, final Integer price,
+                 final int timestamp) {
         super(name, owner);
         this.description = description;
         this.price = price;
         this.timestamp = timestamp;
     }
 
+    /**
+     * @return
+     */
     @Override
     public int getNumberOfTracks() {
         return 0;
     }
 
+    /**
+     * @param index the index
+     * @return
+     */
     @Override
-    public AudioFile getTrackByIndex(int index) {
+    public AudioFile getTrackByIndex(final int index) {
         return null;
     }
 
+    /**
+     * @return
+     */
     @Override
     public ArrayList<Song> getSongs() {
         return null;

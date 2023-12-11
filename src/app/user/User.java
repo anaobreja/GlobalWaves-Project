@@ -16,7 +16,8 @@ public class User extends LibraryEntry {
 
     private String userType;
 
-    public User(String username, int age, String city, String userType) {
+    public User(final String username, final int age,
+                final String city, final String userType) {
         super(username);
         this.age = age;
         this.city = city;

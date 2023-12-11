@@ -17,6 +17,7 @@ public final class FiltersInput {
     private String followers; // pentru search playlist -> followers
     private String description;
     private String date;
+
     public FiltersInput() {
     }
 
@@ -56,9 +57,13 @@ public final class FiltersInput {
         this.followers = followers;
     }
 
-    public void setDescription(final String description) { this.description = description; }
+    public void setDescription(final String description) {
+        this.description = description;
+    }
 
-    public void setDate(final String date) { this.date = date; }
+    public void setDate(final String date) {
+        this.date = date;
+    }
 
     @Override
     public String toString() {

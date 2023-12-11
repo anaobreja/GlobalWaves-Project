@@ -48,5 +48,8 @@ public abstract class AudioCollection extends LibraryEntry {
         return this.getOwner().equals(user);
     }
 
+    /**
+     * @return
+     */
     public abstract ArrayList<Song> getSongs();
 }

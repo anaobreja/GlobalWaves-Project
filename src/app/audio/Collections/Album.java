@@ -21,19 +21,27 @@ public class Album extends AudioCollection {
      * @param owner the owner
      * @param songs
      */
-    public Album(String name, String owner, ArrayList<Song> songs, Integer releaseYear,
-                 int timestamp) {
+    public Album(final String name, final String owner,
+                 final ArrayList<Song> songs, final Integer releaseYear,
+                 final int timestamp) {
         super(name, owner);
         this.releaseYear = releaseYear;
         this.timestamp = timestamp;
         this.songs = songs;
     }
 
+    /**
+     * @return
+     */
     @Override
     public int getNumberOfTracks() {
         return songs.size();
     }
 
+    /**
+     * @param index the index
+     * @return
+     */
     @Override
     public AudioFile getTrackByIndex(final int index) {
         return songs.get(index);

@@ -18,13 +18,18 @@ public class Host extends User {
     @Setter
     private HostPage hostPage;
 
-    public Host(String username, int age, String city, String userType) {
+    public Host(final String username, final int age,
+                final String city, final String userType) {
         super(username, age, city, userType);
         this.hostPage = new HostPage(new ArrayList<>(), new ArrayList<>());
     }
 
 
-    private static Episode converseEpisode(EpisodeInput episodeInput) {
+    /**
+     * @param episodeInput
+     * @return
+     */
+    private static Episode converseEpisode(final EpisodeInput episodeInput) {
         String name = episodeInput.getName();
         Integer duration = episodeInput.getDuration();
         String description = episodeInput.getDescription();
@@ -32,8 +37,16 @@ public class Host extends User {
         return new Episode(name, duration, description);
     }
 
-    public String addPodcast(String name, String owner, ArrayList<EpisodeInput> episodes,
-                             int timestamp) {
+    /**
+     * @param name
+     * @param owner
+     * @param episodes
+     * @param timestamp
+     * @return
+     */
+    public String addPodcast(final String name, final String owner,
+                             final ArrayList<EpisodeInput> episodes,
+                             final int timestamp) {
 
         ArrayList<Episode> episodeResult = new ArrayList<>();
 
@@ -46,16 +59,10 @@ public class Host extends User {
         Podcast podcast = new Podcast(name, owner, episodeResult);
 
         for (Podcast podcast1 : Admin.getPodcasts()) {
-            if (podcast1.getName().equals(podcast.getName()))
+            if (podcast1.getName().equals(podcast.getName())) {
                 return owner + " has another podcast with the same name.";
+            }
         }
-
-//        Set<String> songNames = new HashSet<>();
-//        for (Song song : album.getSongs()) {
-//            if (!songNames.add(song.getName())) {
-//                return owner + " has the same song at least twice in this album.";
-//            }
-//        }
 
         Admin.getPodcasts().add(podcast);
         hostPage.getPodcasts().add(podcast);
@@ -64,7 +71,12 @@ public class Host extends User {
         return owner + " has added new podcast successfully.";
     }
 
-    public String removePodcast(String name, String username) {
+    /**
+     * @param name
+     * @param username
+     * @return
+     */
+    public String removePodcast(final String name, final String username) {
         for (NormalUser userAux : Admin.getNormalUsers()) {
             PlayerSource source = userAux.getPlayer().getSource();
 
@@ -100,14 +112,22 @@ public class Host extends User {
         return username + " deleted the podcast successfully.";
     }
 
-    public String addAnnouncement(String name, String owner, String description) {
+    /**
+     * @param name
+     * @param owner
+     * @param description
+     * @return
+     */
+    public String addAnnouncement(final String name, final String owner,
+                                  final String description) {
 
 
         Announcement announcement = new Announcement(name, owner, description);
 
         for (Announcement announcement1 : hostPage.getAnnouncements()) {
-            if (announcement1.getName().equals(announcement.getName()))
+            if (announcement1.getName().equals(announcement.getName())) {
                 return owner + " has another announcement with the same name.";
+            }
         }
 
         hostPage.getAnnouncements().add(announcement);
@@ -116,16 +136,23 @@ public class Host extends User {
         return owner + " has successfully added new announcement.";
     }
 
-    public String revomeAnnouncement(String name, String owner) {
+    /**
+     * @param name
+     * @param owner
+     * @return
+     */
+    public String revomeAnnouncement(final String name, final String owner) {
         Announcement announcement = null;
 
         for (Announcement announcement1 : hostPage.getAnnouncements()) {
-            if (announcement1.getName().equals(name))
+            if (announcement1.getName().equals(name)) {
                 announcement = announcement1;
+            }
         }
 
-        if (announcement == null)
+        if (announcement == null) {
             return owner + " has no announcement with the given name.";
+        }
 
         hostPage.getAnnouncements().remove(announcement);
 

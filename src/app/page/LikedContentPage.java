@@ -9,14 +9,23 @@ public class LikedContentPage extends Page {
     private final List<Song> likedSongs;
     private final List<Playlist> followedPlaylists;
 
-    public LikedContentPage(List<Song> likedSongs, List<Playlist> followedPlaylists) {
+    /**
+     * @param likedSongs
+     * @param followedPlaylists
+     */
+    public LikedContentPage(final List<Song> likedSongs,
+                            final List<Playlist> followedPlaylists) {
         this.likedSongs = likedSongs;
         this.followedPlaylists = followedPlaylists;
     }
 
+    /**
+     * @return
+     */
     @Override
     public String showPage() {
         StringBuilder songsStringBuilder = new StringBuilder("Liked songs:\n\t");
+
         if (likedSongs.isEmpty()) {
             songsStringBuilder.append("[]\n\n");
         } else {
@@ -50,7 +59,7 @@ public class LikedContentPage extends Page {
             playlistsStringBuilder.append("]");
         }
 
-        return songsStringBuilder.toString() + playlistsStringBuilder.toString();
+        return songsStringBuilder + playlistsStringBuilder.toString();
     }
 
 }

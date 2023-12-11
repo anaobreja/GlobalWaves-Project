@@ -1,19 +1,19 @@
 package app.user;
 
 import app.Admin;
-import app.audio.Collections.*;
+import app.audio.Collections.Album;
+import app.audio.Collections.AudioCollection;
+import app.audio.Collections.Event;
+import app.audio.Collections.Merch;
 import app.audio.Files.AudioFile;
-import app.audio.Files.Episode;
 import app.audio.Files.Song;
 import app.page.ArtistPage;
 import app.player.PlayerSource;
 import app.utils.EventValidator;
-import fileio.input.EpisodeInput;
 import fileio.input.SongInput;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
@@ -29,12 +29,24 @@ public class Artist extends User {
     @Setter
     private EventValidator eventValidator;
 
-    public Artist(String username, int age, String city, String userType) {
+    /**
+     * @param username
+     * @param age
+     * @param city
+     * @param userType
+     */
+    public Artist(final String username, final int age,
+                  final String city, final String userType) {
         super(username, age, city, userType);
         this.artistPage = new ArtistPage(new ArrayList<>(), new ArrayList<>(),
                 new ArrayList<>());
     }
-    private static Song converseSong (SongInput songInput) {
+
+    /**
+     * @param songInput
+     * @return
+     */
+    private static Song converseSong(final SongInput songInput) {
         String name = songInput.getName();
         Integer duration = songInput.getDuration();
         String album = songInput.getAlbum();
@@ -50,11 +62,20 @@ public class Artist extends User {
     }
 
 
-    public String addAlbum(String name, String owner, ArrayList<SongInput> songs, Integer releaseYear,
-                           int timestamp) {
+    /**
+     * @param name
+     * @param owner
+     * @param songs
+     * @param releaseYear
+     * @param timestamp
+     * @return
+     */
+    public String addAlbum(final String name, final String owner,
+                           final ArrayList<SongInput> songs, final Integer releaseYear,
+                           final int timestamp) {
         ArrayList<Song> songsResult = new ArrayList<>();
 
-        for(SongInput songInput : songs) {
+        for (SongInput songInput : songs) {
             Song song = converseSong(songInput);
             songsResult.add(song);
         }
@@ -63,8 +84,9 @@ public class Artist extends User {
 
         Artist artist = Admin.getArtist(owner);
         for (Album album1 : artist.getArtistPage().getAlbums()) {
-            if (album1.getName().equals(album.getName()))
-                    return owner + " has another album with the same name.";
+            if (album1.getName().equals(album.getName())) {
+                return owner + " has another album with the same name.";
+            }
         }
 
         Set<String> songNames = new HashSet<>();
@@ -85,38 +107,46 @@ public class Artist extends User {
         return owner + " has added new album successfully.";
     }
 
-    public String removeAlbum(String name, String username) {
-        for (NormalUser userAux : Admin.getNormalUsers() ) {
+    /**
+     * @param name
+     * @param username
+     * @return
+     */
+    public String removeAlbum(final String name,
+                              final String username) {
+        for (NormalUser userAux : Admin.getNormalUsers()) {
             PlayerSource source = userAux.getPlayer().getSource();
 
             if (source != null) {
                 AudioCollection audioCollection = source.getAudioCollection();
                 AudioFile audioFile = source.getAudioFile();
-                if (audioCollection != null && audioCollection.matchesOwner(username))
-                    return username + " can't delete this album.";
-                if ((audioFile != null && audioFile.getAlbum() != null
-                                && audioFile.getAlbum().equals(name))) {
+                if (audioCollection != null && audioCollection.matchesOwner(username)) {
                     return username + " can't delete this album.";
                 }
-                if(audioCollection != null && audioCollection.getSongs() != null) {
+                if ((audioFile != null && audioFile.getAlbum() != null
+                        && audioFile.getAlbum().equals(name))) {
+                    return username + " can't delete this album.";
+                }
+                if (audioCollection != null && audioCollection.getSongs() != null) {
                     ArrayList<Song> songs = audioCollection.getSongs();
                     for (Song song : songs) {
-                        if (song.matchesArtist(username))
+                        if (song.matchesArtist(username)) {
                             return username + " can't delete this album.";
+                        }
                     }
                 }
             }
         }
 
         boolean hasAlbum = false;
-        for(Album albumAux : artistPage.getAlbums()) {
+        for (Album albumAux : artistPage.getAlbums()) {
             if (albumAux.getName().equals(name)) {
                 hasAlbum = true;
                 break;
             }
         }
 
-        if (!hasAlbum){
+        if (!hasAlbum) {
             return username + " doesn't have an album with the given name.";
         }
 
@@ -131,16 +161,27 @@ public class Artist extends User {
     }
 
 
-    public String addEvent(String name, String owner, String description, String date,
-                           int timestamp) {
+    /**
+     * @param name
+     * @param owner
+     * @param description
+     * @param date
+     * @param timestamp
+     * @return
+     */
+    public String addEvent(final String name, final String owner,
+                           final String description, final String date,
+                           final int timestamp) {
 
-        if (!EventValidator.isValidDate(date))
+        if (!EventValidator.isValidDate(date)) {
             return "Event for " + owner + " does not have a valid date.";
+        }
         Event event = new Event(name, owner, description, date, timestamp);
 
         for (Event event1 : artistPage.getEvents()) {
-            if (event1.getName().equals(event.getName()))
+            if (event1.getName().equals(event.getName())) {
                 return owner + " has another event with the same name.";
+            }
         }
 
         artistPage.getEvents().add(event);
@@ -149,16 +190,23 @@ public class Artist extends User {
         return owner + " has added new event successfully.";
     }
 
-    public String revomeEvent(String name, String owner) {
+    /**
+     * @param name
+     * @param owner
+     * @return
+     */
+    public String revomeEvent(final String name, final String owner) {
         Event event = null;
 
         for (Event event1 : artistPage.getEvents()) {
-            if (event1.getName().equals(name))
+            if (event1.getName().equals(name)) {
                 event = event1;
+            }
         }
 
-        if (event == null)
+        if (event == null) {
             return owner + " has no event with the given name.";
+        }
 
         artistPage.getEvents().remove(event);
 
@@ -166,13 +214,23 @@ public class Artist extends User {
         return owner + " deleted the event successfully.";
     }
 
-    public String addMerch(String name, String owner, String description, Integer price,
-                           int timestamp) {
+    /**
+     * @param name
+     * @param owner
+     * @param description
+     * @param price
+     * @param timestamp
+     * @return
+     */
+    public String addMerch(final String name, final String owner,
+                           final String description, final Integer price,
+                           final int timestamp) {
         Merch merch = new Merch(name, owner, description, price, timestamp);
 
         for (Merch merch1 : artistPage.getMerches()) {
-            if (merch1.getName().equals(merch.getName()))
+            if (merch1.getName().equals(merch.getName())) {
                 return owner + " has merchandise with the same name.";
+            }
         }
 
         artistPage.getMerches().add(merch);

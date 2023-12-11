@@ -12,7 +12,13 @@ public abstract class AudioFile extends LibraryEntry {
         this.duration = duration;
     }
 
+    /**
+     * @return
+     */
     public abstract String getArtist();
 
+    /**
+     * @return
+     */
     public abstract Object getAlbum();
 }

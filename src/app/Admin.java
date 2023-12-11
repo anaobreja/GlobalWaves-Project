@@ -9,7 +9,6 @@ import app.user.Artist;
 import app.user.Host;
 import app.user.NormalUser;
 import app.user.User;
-import app.utils.Enums;
 import fileio.input.EpisodeInput;
 import fileio.input.PodcastInput;
 import fileio.input.SongInput;
@@ -58,7 +57,7 @@ public final class Admin {
     private static int timestamp = 0;
     private static final int LIMIT = 5;
 
-    private Admin() {}
+    private Admin() { }
 
 
     /**
@@ -69,15 +68,26 @@ public final class Admin {
     public static void setUsers(final List<UserInput> userInputList) {
         normalUsers = new ArrayList<>();
         for (UserInput userInput : userInputList) {
-            normalUsers.add(new NormalUser(userInput.getUsername(), userInput.getAge(), userInput.getCity()));
+            normalUsers.add(new NormalUser(userInput.getUsername(),
+                    userInput.getAge(), userInput.getCity()));
             names.add(userInput.getUsername());
         }
     }
 
-    public static String addUser(String username, Integer age, String city, String type) {
+    /**
+     *
+     * @param username
+     * @param age
+     * @param city
+     * @param type
+     * @return
+     */
+    public static String addUser(final String username, final Integer age,
+                                 final String city, final String type) {
         for (String name : names) {
-            if (name.equals(username))
-                return "The username " +  username + " is already taken.";
+            if (name.equals(username)) {
+                return "The username " + username + " is already taken.";
+            }
         }
 
         names.add(username);
@@ -135,20 +145,6 @@ public final class Admin {
         }
     }
 
-    /**
-     * Gets songs.
-     *
-     * @return the songs
-     */
-
-    /**
-     * Gets podcasts.
-     *
-     * @return the podcasts
-     */
-//    public static List<Podcast> getPodcasts() {
-//        return new ArrayList<>(podcasts);
-//    }
 
     /**
      * Gets playlists.
@@ -178,7 +174,11 @@ public final class Admin {
         return null;
     }
 
-    public static String getName (final String username) {
+    /**
+     * @param username
+     * @return
+     */
+    public static String getName(final String username) {
         for (String name : names) {
             if (name.equals(username)) {
                 return name;
@@ -187,7 +187,11 @@ public final class Admin {
         return null;
     }
 
-    public static Artist getArtist (final String username) {
+    /**
+     * @param username
+     * @return
+     */
+    public static Artist getArtist(final String username) {
         for (Artist artist : artists) {
             if (artist.getName().equals(username)) {
                 return artist;
@@ -196,7 +200,11 @@ public final class Admin {
         return null;
     }
 
-    public static Host getHosts (final String username) {
+    /**
+     * @param username
+     * @return
+     */
+    public static Host getHosts(final String username) {
         for (Host host : hosts) {
             if (host.getName().equals(username)) {
                 return host;
@@ -206,15 +214,22 @@ public final class Admin {
     }
 
 
+    /**
+     * @return
+     */
     public static ArrayList<String> getOnlineUsers() {
         ArrayList<String> onlineUsers = new ArrayList<>();
         for (NormalUser user : normalUsers) {
-            if (user.online)
+            if (user.isOnline()) {
                 onlineUsers.add(user.getName());
+            }
         }
         return onlineUsers;
     }
 
+    /**
+     * @return
+     */
     public static ArrayList<String> getAllUsers() {
         ArrayList<String> users = new ArrayList<>();
 
@@ -222,11 +237,11 @@ public final class Admin {
                 users.add(user.getName());
         }
 
-        for(Artist artist : artists) {
+        for (Artist artist : artists) {
             users.add(artist.getName());
         }
 
-        for(Host host : hosts) {
+        for (Host host : hosts) {
             users.add(host.getName());
         }
 
@@ -294,8 +309,12 @@ public final class Admin {
         return topPlaylists;
     }
 
-    public static String deleteUser(String username) {
-        User userToDelete = null;
+    /**
+     * @param username
+     * @return
+     */
+    public static String deleteUser(final String username) {
+        User userToDelete;
 
         for (NormalUser userAux : normalUsers) {
             PlayerSource source = userAux.getPlayer().getSource();
@@ -304,37 +323,39 @@ public final class Admin {
                 AudioCollection audioCollection = source.getAudioCollection();
                 AudioFile audioFile = source.getAudioFile();
 
-                if ((audioCollection != null && audioCollection.getOwner().equals(username))  ||
-                        (audioFile != null && audioFile.getArtist() != null
-                &&audioFile.getArtist().equals(username))) {
+                if ((audioCollection != null && audioCollection.getOwner().equals(username))
+                        || (audioFile != null && audioFile.getArtist() != null
+                && audioFile.getArtist().equals(username))) {
                     return username + " can't be deleted.";
                 }
 
             }
 
-            if (userAux.getPageOwner() != null && userAux.getPageOwner().equals(username))
+            if (userAux.getPageOwner() != null
+                    && userAux.getPageOwner().equals(username)) {
                 return username + " can't be deleted.";
+            }
         }
-
-
 
         NormalUser userAux = null;
 
         for (NormalUser user : normalUsers) {
             if (user.getName().equals(username)) {
                 userAux = user;
-
             }
         }
 
         for (NormalUser normalUser : normalUsers) {
             normalUser.getLikedSongs().removeIf(song -> song.getArtist().equals(username));
-            normalUser.getFollowedPlaylists().removeIf(playlist -> playlist.getOwner().equals(username));
-            if (userAux != null)
-            for (Playlist playlist : userAux.getFollowedPlaylists()) {
-                for (Playlist followedPlaylist : normalUser.getPlaylists()) {
-                    if (playlist.getName().equals(followedPlaylist.getName()))
-                        playlist.decreaseFollowers();
+            normalUser.getFollowedPlaylists().
+                    removeIf(playlist -> playlist.getOwner().equals(username));
+            if (userAux != null) {
+                for (Playlist playlist : userAux.getFollowedPlaylists()) {
+                    for (Playlist followedPlaylist : normalUser.getPlaylists()) {
+                        if (playlist.getName().equals(followedPlaylist.getName())) {
+                            playlist.decreaseFollowers();
+                        }
+                    }
                 }
             }
         }
@@ -356,8 +377,6 @@ public final class Admin {
         if (userName == null) {
             return "The username " + username + " doesn't exist.";
         }
-
-
 
 
         for (Artist artist : artists) {
