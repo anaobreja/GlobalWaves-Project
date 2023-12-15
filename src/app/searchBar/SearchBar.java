@@ -50,10 +50,10 @@ public final class SearchBar {
      */
     public List<LibraryEntry> search(final Filters filters, final String type) {
         List<LibraryEntry> entries;
-
+        Admin admin = Admin.getInstance();
         switch (type) {
             case "song":
-                entries = new ArrayList<>(Admin.getSongs());
+                entries = new ArrayList<>(admin.getSongs());
 
                 if (filters.getName() != null) {
                     entries = filterByName(entries, filters.getName());
@@ -85,7 +85,7 @@ public final class SearchBar {
 
                 break;
             case "playlist":
-                entries = new ArrayList<>(Admin.getPlaylists());
+                entries = new ArrayList<>(admin.getPlaylists());
 
                 entries = filterByPlaylistVisibility(entries, user);
 
@@ -103,7 +103,7 @@ public final class SearchBar {
 
                 break;
             case "podcast":
-                entries = new ArrayList<>(Admin.getPodcasts());
+                entries = new ArrayList<>(admin.getPodcasts());
 
                 if (filters.getName() != null) {
                     entries = filterByName(entries, filters.getName());
@@ -115,21 +115,21 @@ public final class SearchBar {
 
                 break;
             case "artist":
-                entries = new ArrayList<>(Admin.getArtists());
+                entries = new ArrayList<>(admin.getArtists());
 
                 if (filters.getName() != null) {
                     entries = filterByName(entries, filters.getName());
                 }
                 break;
             case "host":
-                entries = new ArrayList<>(Admin.getHosts());
+                entries = new ArrayList<>(admin.getHosts());
 
                 if (filters.getName() != null) {
                     entries = filterByName(entries, filters.getName());
                 }
                 break;
             case "album":
-                entries = new ArrayList<>(Admin.getAlbums());
+                entries = new ArrayList<>(admin.getAlbums());
 
                 if (filters.getName() != null) {
                     entries = filterByName(entries, filters.getName());
@@ -142,10 +142,6 @@ public final class SearchBar {
                 if (filters.getDescription() != null) {
                     entries = filterByDescription(entries, filters.getDescription());
                 }
-
-//                if (filters.getDate() != null) {
-//                    entries = filterByDate(entries, filters.getDate());
-//                }
 
                 break;
             default:

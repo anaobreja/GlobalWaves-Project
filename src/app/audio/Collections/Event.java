@@ -29,7 +29,8 @@ public class Event extends AudioCollection {
     }
 
     /**
-     * @return
+     * @return the number of tracks
+     * (always 0 for an event)
      */
     @Override
     public int getNumberOfTracks() {
@@ -37,8 +38,11 @@ public class Event extends AudioCollection {
     }
 
     /**
-     * @param index the index
-     * @return
+     * Retrieves the track at the specified index in the event.
+     *
+     * @param index The index of the track to retrieve.
+     * @return The AudioFile at the specified index
+     * (always null).
      */
     @Override
     public AudioFile getTrackByIndex(final int index) {
@@ -46,7 +50,8 @@ public class Event extends AudioCollection {
     }
 
     /**
-     * @return
+     * @return the list of songs from an event
+     * (always null)
      */
     @Override
     public ArrayList<Song> getSongs() {

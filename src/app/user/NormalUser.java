@@ -188,7 +188,7 @@ public class NormalUser extends User {
         }
 
         Enums.RepeatMode repeatMode = player.repeat();
-        String repeatStatus = "";
+        String repeatStatus;
 
         switch (repeatMode) {
             case NO_REPEAT -> {
@@ -563,7 +563,9 @@ public class NormalUser extends User {
     }
 
     /**
-     * @return
+     * Toggles the connection status of a user or entity and updates the online status accordingly.
+     *
+     * @return A message indicating the successful status change.
      */
     public String switchConnectionStatus() {
         online = !online;
@@ -583,9 +585,12 @@ public class NormalUser extends User {
     }
 
     /**
-     * @return
+     * Generates and prints the content of the current page based on the user's online status and page type.
+     *
+     * @return A string representation of the current page content or null if the page type is not recognized.
      */
     public String printCurrentPage() {
+        Admin admin = Admin.getInstance();
 
         if (!online) {
             return super.getName() + " is offline.";
@@ -598,12 +603,12 @@ public class NormalUser extends User {
             case "likedContentPage" -> page = new LikedContentPage(likedSongs, followedPlaylists);
             case "artistPage" -> {
                 String artistName = pageOwner;
-                Artist artist = Admin.getArtist(artistName);
+                Artist artist = admin.getArtist(artistName);
                 page = artist.getArtistPage();
             }
             case "hostPage" -> {
                 String hostName = pageOwner;
-                Host host = Admin.getHosts(hostName);
+                Host host = admin.getHost(hostName);
                 page = host.getHostPage();
             }
             default -> {
@@ -617,8 +622,10 @@ public class NormalUser extends User {
     }
 
     /**
-     * @param type
-     * @return
+     * Changes the current page based on the provided type if the user is online.
+     *
+     * @param type The type of page to switch to.
+     * @return A message indicating the successful page access or an offline status message.
      */
     public String changePage(final String type) {
         if (!online) {

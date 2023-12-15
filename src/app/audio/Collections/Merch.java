@@ -32,7 +32,8 @@ public class Merch extends AudioCollection {
     }
 
     /**
-     * @return
+     * @return the number of tracks
+     * (always 0 for a merch)
      */
     @Override
     public int getNumberOfTracks() {
@@ -40,8 +41,11 @@ public class Merch extends AudioCollection {
     }
 
     /**
-     * @param index the index
-     * @return
+     * Retrieves the track at the specified index in the merch.
+     *
+     * @param index The index of the track to retrieve.
+     * @return The AudioFile at the specified index
+     * (always null).
      */
     @Override
     public AudioFile getTrackByIndex(final int index) {
@@ -49,7 +53,8 @@ public class Merch extends AudioCollection {
     }
 
     /**
-     * @return
+     * @return the list of songs from a merch
+     * (always null)
      */
     @Override
     public ArrayList<Song> getSongs() {

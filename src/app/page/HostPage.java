@@ -9,18 +9,15 @@ import lombok.Setter;
 import java.util.ArrayList;
 import java.util.List;
 
+@Getter
+@Setter
 public class HostPage extends Page {
-
-    @Getter
-    @Setter
-    private ArrayList<Podcast> podcasts;
-    @Getter
-    @Setter
-    private ArrayList<Announcement> announcements;
+    private final ArrayList<Podcast> podcasts;
+    private final ArrayList<Announcement> announcements;
 
     /**
-     * @param podcasts
-     * @param announcements
+     * @param podcasts the podcasts
+     * @param announcements the announcements
      */
     public HostPage(final ArrayList<Podcast> podcasts,
                     final ArrayList<Announcement> announcements) {
@@ -29,7 +26,7 @@ public class HostPage extends Page {
     }
 
     /**
-     * @return
+     * @return A formatted string displaying podcasts and announcements.
      */
     @Override
     public String showPage() {

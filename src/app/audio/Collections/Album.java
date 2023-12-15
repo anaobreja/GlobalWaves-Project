@@ -19,7 +19,7 @@ public class Album extends AudioCollection {
      *
      * @param name  the name
      * @param owner the owner
-     * @param songs
+     * @param songs the songs
      */
     public Album(final String name, final String owner,
                  final ArrayList<Song> songs, final Integer releaseYear,
@@ -31,7 +31,9 @@ public class Album extends AudioCollection {
     }
 
     /**
-     * @return
+     * Returns the total number of tracks in the collection.
+     *
+     * @return The total number of tracks.
      */
     @Override
     public int getNumberOfTracks() {
@@ -39,13 +41,14 @@ public class Album extends AudioCollection {
     }
 
     /**
-     * @param index the index
-     * @return
+     * Retrieves the track at the specified index in the collection.
+     *
+     * @param index The index of the track to retrieve.
+     * @return The AudioFile at the specified index.
      */
     @Override
     public AudioFile getTrackByIndex(final int index) {
         return songs.get(index);
     }
-
 
 }

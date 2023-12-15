@@ -21,19 +21,15 @@ import java.util.Set;
 @Setter
 @Getter
 public class Artist extends User {
-    @Getter
-    @Setter
     private ArtistPage artistPage;
 
-    @Getter
-    @Setter
     private EventValidator eventValidator;
 
     /**
-     * @param username
-     * @param age
-     * @param city
-     * @param userType
+     * @param username The username of the artist.
+     * @param age      The age of the artist.
+     * @param city     The city where the artist resides.
+     * @param userType The type of user (artist in this case).
      */
     public Artist(final String username, final int age,
                   final String city, final String userType) {
@@ -43,8 +39,10 @@ public class Artist extends User {
     }
 
     /**
-     * @param songInput
-     * @return
+     * Converts SongInput to a Song object.
+     *
+     * @param songInput The input containing song details.
+     * @return The converted Song object.
      */
     private static Song converseSong(final SongInput songInput) {
         String name = songInput.getName();
@@ -63,16 +61,20 @@ public class Artist extends User {
 
 
     /**
-     * @param name
-     * @param owner
-     * @param songs
-     * @param releaseYear
-     * @param timestamp
-     * @return
+     * Adds a new album to the collection.
+     *
+     * @param name         The name of the album.
+     * @param owner        The owner of the album.
+     * @param songs        The list of songs in the album.
+     * @param releaseYear  The release year of the album.
+     * @param timestamp    The timestamp of the album addition.
+     * @return A message indicating the success or failure of the album addition.
      */
     public String addAlbum(final String name, final String owner,
                            final ArrayList<SongInput> songs, final Integer releaseYear,
                            final int timestamp) {
+        Admin admin = Admin.getInstance();
+
         ArrayList<Song> songsResult = new ArrayList<>();
 
         for (SongInput songInput : songs) {
@@ -82,7 +84,7 @@ public class Artist extends User {
 
         Album album = new Album(name, owner, songsResult, releaseYear, timestamp);
 
-        Artist artist = Admin.getArtist(owner);
+        Artist artist = admin.getArtist(owner);
         for (Album album1 : artist.getArtistPage().getAlbums()) {
             if (album1.getName().equals(album.getName())) {
                 return owner + " has another album with the same name.";
@@ -96,11 +98,11 @@ public class Artist extends User {
             }
         }
 
-        Admin.getAlbums().add(album);
+        admin.getAlbums().add(album);
         artistPage.getAlbums().add(album);
 
         for (Song song : songsResult) {
-            Admin.getSongs().add(song);
+            admin.getSongs().add(song);
         }
 
 
@@ -108,13 +110,16 @@ public class Artist extends User {
     }
 
     /**
-     * @param name
-     * @param username
-     * @return
+     * Removes an album belonging to a user.
+     *
+     * @param name     The name of the album to be removed.
+     * @param username The username of the user attempting to remove the album.
+     * @return A message indicating the success or failure of the album removal.
      */
     public String removeAlbum(final String name,
                               final String username) {
-        for (NormalUser userAux : Admin.getNormalUsers()) {
+        Admin admin = Admin.getInstance();
+        for (NormalUser userAux : admin.getNormalUsers()) {
             PlayerSource source = userAux.getPlayer().getSource();
 
             if (source != null) {
@@ -150,9 +155,9 @@ public class Artist extends User {
             return username + " doesn't have an album with the given name.";
         }
 
-        Admin.getAlbums().removeIf(album -> album.getName().equals(name));
+        admin.getAlbums().removeIf(album -> album.getName().equals(name));
 
-        Artist user = Admin.getArtist(username);
+        Artist user = admin.getArtist(username);
 
         assert user != null;
         user.getArtistPage().getAlbums().removeIf(album -> album.getName().equals(name));
@@ -162,18 +167,22 @@ public class Artist extends User {
 
 
     /**
-     * @param name
-     * @param owner
-     * @param description
-     * @param date
-     * @param timestamp
-     * @return
+     * Adds a new event to an artist's page.
+     *
+     * @param name        The name of the event.
+     * @param owner       The owner of the event.
+     * @param description The description of the event.
+     * @param date        The date of the event.
+     * @param timestamp   The timestamp of the event addition.
+     * @return A message indicating the success or failure of the event addition.
      */
     public String addEvent(final String name, final String owner,
                            final String description, final String date,
                            final int timestamp) {
 
-        if (!EventValidator.isValidDate(date)) {
+        EventValidator eventValidator = EventValidator.getInstance();
+
+        if (!eventValidator.isValidDate(date)) {
             return "Event for " + owner + " does not have a valid date.";
         }
         Event event = new Event(name, owner, description, date, timestamp);
@@ -191,11 +200,13 @@ public class Artist extends User {
     }
 
     /**
-     * @param name
-     * @param owner
-     * @return
+     * Removes an event from an artist's page.
+     *
+     * @param name  The name of the event to be removed.
+     * @param owner The owner of the event.
+     * @return A message indicating the success or failure of the event removal.
      */
-    public String revomeEvent(final String name, final String owner) {
+    public String removeEvent(final String name, final String owner) {
         Event event = null;
 
         for (Event event1 : artistPage.getEvents()) {
@@ -215,25 +226,27 @@ public class Artist extends User {
     }
 
     /**
-     * @param name
-     * @param owner
-     * @param description
-     * @param price
-     * @param timestamp
-     * @return
+     * Adds new merchandise to an artist's page.
+     *
+     * @param name        The name of the merchandise.
+     * @param owner       The owner of the merchandise.
+     * @param description The description of the merchandise.
+     * @param price       The price of the merchandise.
+     * @param timestamp   The timestamp of the merchandise addition.
+     * @return A message indicating the success or failure of the merchandise addition.
      */
     public String addMerch(final String name, final String owner,
                            final String description, final Integer price,
                            final int timestamp) {
         Merch merch = new Merch(name, owner, description, price, timestamp);
 
-        for (Merch merch1 : artistPage.getMerches()) {
+        for (Merch merch1 : artistPage.getMerchandise()) {
             if (merch1.getName().equals(merch.getName())) {
                 return owner + " has merchandise with the same name.";
             }
         }
 
-        artistPage.getMerches().add(merch);
+        artistPage.getMerchandise().add(merch);
 
 
         return owner + " has added new merchandise successfully.";

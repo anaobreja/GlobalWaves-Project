@@ -13,9 +13,9 @@ import lombok.Setter;
 
 import java.util.ArrayList;
 
+@Getter
+@Setter
 public class Host extends User {
-    @Getter
-    @Setter
     private HostPage hostPage;
 
     public Host(final String username, final int age,
@@ -26,8 +26,10 @@ public class Host extends User {
 
 
     /**
-     * @param episodeInput
-     * @return
+     * Converts an EpisodeInput object into an Episode object.
+     *
+     * @param episodeInput The input containing episode details.
+     * @return The converted Episode object.
      */
     private static Episode converseEpisode(final EpisodeInput episodeInput) {
         String name = episodeInput.getName();
@@ -38,15 +40,17 @@ public class Host extends User {
     }
 
     /**
-     * @param name
-     * @param owner
-     * @param episodes
-     * @param timestamp
-     * @return
+     * Adds a new podcast in the hostPage.
+     *
+     * @param name     The name of the podcast.
+     * @param owner    The owner of the podcast.
+     * @param episodes The list of episodes to be added to the podcast.
+     * @return A message indicating the success or failure of the podcast addition.
      */
     public String addPodcast(final String name, final String owner,
-                             final ArrayList<EpisodeInput> episodes,
-                             final int timestamp) {
+                             final ArrayList<EpisodeInput> episodes) {
+
+        Admin admin = Admin.getInstance();
 
         ArrayList<Episode> episodeResult = new ArrayList<>();
 
@@ -58,13 +62,13 @@ public class Host extends User {
 
         Podcast podcast = new Podcast(name, owner, episodeResult);
 
-        for (Podcast podcast1 : Admin.getPodcasts()) {
+        for (Podcast podcast1 : admin.getPodcasts()) {
             if (podcast1.getName().equals(podcast.getName())) {
                 return owner + " has another podcast with the same name.";
             }
         }
 
-        Admin.getPodcasts().add(podcast);
+        admin.getPodcasts().add(podcast);
         hostPage.getPodcasts().add(podcast);
 
 
@@ -72,12 +76,16 @@ public class Host extends User {
     }
 
     /**
-     * @param name
-     * @param username
-     * @return
+     * Removes a podcast from the hostPage.
+     *
+     * @param name     The name of the podcast to be removed.
+     * @param username The username of the user attempting to remove the podcast.
+     * @return A message indicating the success or failure of the podcast removal.
      */
     public String removePodcast(final String name, final String username) {
-        for (NormalUser userAux : Admin.getNormalUsers()) {
+        Admin admin = Admin.getInstance();
+
+        for (NormalUser userAux : admin.getNormalUsers()) {
             PlayerSource source = userAux.getPlayer().getSource();
 
             if (source != null) {
@@ -102,9 +110,9 @@ public class Host extends User {
             return username + " doesn't have a podcast with the given name.";
         }
 
-        Admin.getPodcasts().removeIf(podcast -> podcast.getName().equals(name));
+        admin.getPodcasts().removeIf(podcast -> podcast.getName().equals(name));
 
-        Host user = Admin.getHosts(username);
+        Host user = admin.getHost(username);
 
         assert user != null;
         user.getHostPage().getPodcasts().removeIf(podcast -> podcast.getName().equals(name));
@@ -113,10 +121,12 @@ public class Host extends User {
     }
 
     /**
-     * @param name
-     * @param owner
-     * @param description
-     * @return
+     * Adds a new announcement.
+     *
+     * @param name        The name of the announcement.
+     * @param owner       The owner of the announcement.
+     * @param description The description of the announcement.
+     * @return A message indicating the success or failure of the announcement addition.
      */
     public String addAnnouncement(final String name, final String owner,
                                   final String description) {
@@ -137,11 +147,13 @@ public class Host extends User {
     }
 
     /**
-     * @param name
-     * @param owner
-     * @return
+     * Removes an announcement.
+     *
+     * @param name  The name of the announcement to be removed.
+     * @param owner The owner of the announcement.
+     * @return A message indicating the success or failure of the announcement removal.
      */
-    public String revomeAnnouncement(final String name, final String owner) {
+    public String removeAnnouncement(final String name, final String owner) {
         Announcement announcement = null;
 
         for (Announcement announcement1 : hostPage.getAnnouncements()) {

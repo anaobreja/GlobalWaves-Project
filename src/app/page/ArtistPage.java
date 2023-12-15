@@ -11,30 +11,28 @@ import java.util.ArrayList;
 @Getter
 @Setter
 public class ArtistPage extends Page {
-    @Getter
-    @Setter
     private ArrayList<Album> albums;
-    @Getter
-    @Setter
     private ArrayList<Event> events;
-    @Getter
-    @Setter
-    private ArrayList<Merch> merches;
+    private ArrayList<Merch> merchandise;
 
     /**
-     * @param albums
-     * @param events
-     * @param merches
+     * Constructs an ArtistPage object with albums, events, and merchandise.
+     *
+     * @param albums   The list of albums.
+     * @param events   The list of events.
+     * @param merchandise  The list of merchandise.
      */
     public ArtistPage(final ArrayList<Album> albums, final ArrayList<Event> events,
-                      final ArrayList<Merch> merches) {
+                      final ArrayList<Merch> merchandise) {
         this.albums = albums;
         this.events = events;
-        this.merches = merches;
+        this.merchandise = merchandise;
     }
 
     /**
-     * @return
+     * Generates a textual representation of the artist's page.
+     *
+     * @return A formatted string displaying albums, merchandise, and events.
      */
     @Override
     public String showPage() {
@@ -57,15 +55,15 @@ public class ArtistPage extends Page {
         }
 
         page.append("\nMerch:\n");
-        if (merches.isEmpty()) {
+        if (merchandise.isEmpty()) {
             page.append("\t[]\n");
         } else {
             page.append("\t[");
-            for (int i = 0; i < merches.size(); i++) {
-                Merch merch = merches.get(i);
+            for (int i = 0; i < merchandise.size(); i++) {
+                Merch merch = merchandise.get(i);
                 page.append(String.format("%s - %d:\n\t%s", merch.getName(),
                         merch.getPrice(), merch.getDescription()));
-                if (i < merches.size() - 1) {
+                if (i < merchandise.size() - 1) {
                     page.append(", ");
                 }
             }

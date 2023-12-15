@@ -13,12 +13,12 @@ public abstract class AudioFile extends LibraryEntry {
     }
 
     /**
-     * @return
+     * @return the artist
      */
     public abstract String getArtist();
 
     /**
-     * @return
+     * @return the album
      */
     public abstract Object getAlbum();
 }

@@ -10,8 +10,10 @@ public class LikedContentPage extends Page {
     private final List<Playlist> followedPlaylists;
 
     /**
-     * @param likedSongs
-     * @param followedPlaylists
+     * Constructs a HomePage object with liked songs and followed playlists.
+     *
+     * @param likedSongs        The list of liked songs.
+     * @param followedPlaylists The list of followed playlists.
      */
     public LikedContentPage(final List<Song> likedSongs,
                             final List<Playlist> followedPlaylists) {
@@ -20,7 +22,9 @@ public class LikedContentPage extends Page {
     }
 
     /**
-     * @return
+     * Generates a formatted representation of the user's home page.
+     *
+     * @return A formatted string displaying liked songs and followed playlists.
      */
     @Override
     public String showPage() {

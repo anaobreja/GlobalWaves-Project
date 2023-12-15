@@ -140,9 +140,11 @@ public final class FilterUtils {
     }
 
     /**
-     * @param entries
-     * @param description
-     * @return
+     * Filter by followers list.
+     *
+     * @param entries   the entries
+     * @param description the description
+     * @return the list
      */
     public static List<LibraryEntry> filterByDescription(final List<LibraryEntry> entries,
                                                          final String description) {

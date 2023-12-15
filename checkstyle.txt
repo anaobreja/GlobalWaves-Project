@@ -1,10 +1,18 @@
 Starting audit...
 [ERROR] C:\Users\Ana\Downloads\oop-project-2023-main (1)\oop-project-2023-main\etapa2\.\src\app\Admin.java:3:29: Using the '.*' form of import should be avoided - app.audio.Collections.*. [AvoidStarImport]
+[ERROR] C:\Users\Ana\Downloads\oop-project-2023-main (1)\oop-project-2023-main\etapa2\.\src\app\Admin.java:27:1: Class Admin should be declared as final. [FinalClass]
+[ERROR] C:\Users\Ana\Downloads\oop-project-2023-main (1)\oop-project-2023-main\etapa2\.\src\app\Admin.java:41:23: Name 'LIMIT' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
+[ERROR] C:\Users\Ana\Downloads\oop-project-2023-main (1)\oop-project-2023-main\etapa2\.\src\app\CommandRunner.java:31:39: Name 'objectMapper' must match pattern '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'. [ConstantName]
 [ERROR] C:\Users\Ana\Downloads\oop-project-2023-main (1)\oop-project-2023-main\etapa2\.\src\app\searchBar\SearchBar.java:11:40: Using the '.*' form of import should be avoided - app.searchBar.FilterUtils.*. [AvoidStarImport]
+[ERROR] C:\Users\Ana\Downloads\oop-project-2023-main (1)\oop-project-2023-main\etapa2\.\src\app\user\Artist.java:183:24: 'eventValidator' hides a field. [HiddenField]
 [ERROR] C:\Users\Ana\Downloads\oop-project-2023-main (1)\oop-project-2023-main\etapa2\.\src\app\user\NormalUser.java:118:32: Inner assignments should be avoided. [InnerAssignment]
-[ERROR] C:\Users\Ana\Downloads\oop-project-2023-main (1)\oop-project-2023-main\etapa2\.\src\app\user\NormalUser.java:597:37: Inner assignments should be avoided. [InnerAssignment]
-[ERROR] C:\Users\Ana\Downloads\oop-project-2023-main (1)\oop-project-2023-main\etapa2\.\src\app\user\NormalUser.java:598:45: Inner assignments should be avoided. [InnerAssignment]
-[ERROR] C:\Users\Ana\Downloads\oop-project-2023-main (1)\oop-project-2023-main\etapa2\.\src\app\utils\EventValidator.java:35:48: '29' is a magic number. [MagicNumber]
-[ERROR] C:\Users\Ana\Downloads\oop-project-2023-main (1)\oop-project-2023-main\etapa2\.\src\app\utils\EventValidator.java:35:53: '28' is a magic number. [MagicNumber]
+[ERROR] C:\Users\Ana\Downloads\oop-project-2023-main (1)\oop-project-2023-main\etapa2\.\src\app\user\NormalUser.java:588: Line is longer than 100 characters (found 108). [LineLength]
+[ERROR] C:\Users\Ana\Downloads\oop-project-2023-main (1)\oop-project-2023-main\etapa2\.\src\app\user\NormalUser.java:590: Line is longer than 100 characters (found 110). [LineLength]
+[ERROR] C:\Users\Ana\Downloads\oop-project-2023-main (1)\oop-project-2023-main\etapa2\.\src\app\user\NormalUser.java:602:37: Inner assignments should be avoided. [InnerAssignment]
+[ERROR] C:\Users\Ana\Downloads\oop-project-2023-main (1)\oop-project-2023-main\etapa2\.\src\app\user\NormalUser.java:603:45: Inner assignments should be avoided. [InnerAssignment]
+[ERROR] C:\Users\Ana\Downloads\oop-project-2023-main (1)\oop-project-2023-main\etapa2\.\src\app\utils\EventValidator.java:3:8: Unused import - app.Admin. [UnusedImports]
+[ERROR] C:\Users\Ana\Downloads\oop-project-2023-main (1)\oop-project-2023-main\etapa2\.\src\app\utils\EventValidator.java:52:48: '29' is a magic number. [MagicNumber]
+[ERROR] C:\Users\Ana\Downloads\oop-project-2023-main (1)\oop-project-2023-main\etapa2\.\src\app\utils\EventValidator.java:52:53: '28' is a magic number. [MagicNumber]
+[ERROR] C:\Users\Ana\Downloads\oop-project-2023-main (1)\oop-project-2023-main\etapa2\.\src\app\utils\Statistics.java:3:8: Unused import - app.Admin. [UnusedImports]
 Audit done.
-Checkstyle ends with 7 errors.
+Checkstyle ends with 15 errors.

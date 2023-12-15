@@ -49,7 +49,7 @@ public abstract class AudioCollection extends LibraryEntry {
     }
 
     /**
-     * @return
+     * @return the songs from the audio collection
      */
     public abstract ArrayList<Song> getSongs();
 }

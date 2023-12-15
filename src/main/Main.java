@@ -18,11 +18,11 @@ import java.nio.file.Paths;
 import java.util.Objects;
 
 /**
- * The entry point to this homework. It runs the checker that tests your implentation.
+ * The entry point to this homework. It runs the checker that tests your implementation.
  */
 public final class Main {
     /**
-     * for coding style
+     * for coding styles
      */
     private Main() {
     }
@@ -79,12 +79,13 @@ public final class Main {
                 CommandInput[].class);
         ArrayNode outputs = objectMapper.createArrayNode();
 
-        Admin.setUsers(library.getUsers());
-        Admin.setSongs(library.getSongs());
-        Admin.setPodcasts(library.getPodcasts());
+        Admin admin = Admin.getInstance();
+        admin.setUsers(library.getUsers());
+        admin.setSongs(library.getSongs());
+        admin.setPodcasts(library.getPodcasts());
 
         for (CommandInput command : commands) {
-            Admin.updateTimestamp(command.getTimestamp());
+            admin.updateTimestamp(command.getTimestamp());
 
             String commandName = command.getCommand();
 
@@ -139,6 +140,6 @@ public final class Main {
         ObjectWriter objectWriter = objectMapper.writerWithDefaultPrettyPrinter();
         objectWriter.writeValue(new File(filePath2), outputs);
 
-        Admin.reset();
+        admin.reset();
     }
 }

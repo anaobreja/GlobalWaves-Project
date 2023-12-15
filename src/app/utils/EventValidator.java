@@ -1,14 +1,12 @@
 package app.utils;
 
+import app.Admin;
+
 import java.time.DateTimeException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
 public final class EventValidator {
-
-    private EventValidator() {
-    }
-
 
     private static final int MIN_DAY = 1;
     private static final int MAX_DAY = 31;
@@ -17,12 +15,31 @@ public final class EventValidator {
     private static final int MIN_YEAR = 1900;
     private static final int MAX_YEAR = 2023;
 
+    private static EventValidator instance = null;
+
+    private EventValidator() {
+    }
 
     /**
-     * @param dateStr
-     * @return
+     * Returns the instance of the EventValidator singleton class.
+     *
+     * @return The instance of the EventValidator class.
      */
-    public static boolean isValidDate(final String dateStr) {
+    public static EventValidator getInstance() {
+        if (instance == null) {
+            instance = new EventValidator();
+        }
+        return instance;
+    }
+
+
+    /**
+     * Validates a date string in the format "dd-MM-yyyy".
+     *
+     * @param dateStr the date string to validate
+     * @return  true if the date string is valid, false otherwise
+     */
+    public boolean isValidDate(final String dateStr) {
         try {
             DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
             LocalDate date = LocalDate.parse(dateStr, formatter);
@@ -40,11 +57,7 @@ public final class EventValidator {
                 return false;
             }
 
-            if (month == 2 && (day > februaryMaxDays)) {
-                return false;
-            }
-
-            return true;
+            return month != 2 || (day <= februaryMaxDays);
         } catch (DateTimeException | NullPointerException e) {
             return false;
         }

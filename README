@@ -1,0 +1,134 @@
+# Proiect GlobalWaves - Etapa 2 321 CA - Obreja Ana-Maria Decembrie, 2022
+
+This project encompasses a comprehensive audio management system that
+facilitates user interaction with audio content including songs,
+podcasts, and playlists. The code is organized into distinct modules,
+each handling specific functionalities within the audio platform.
+
+Commands and Functionalities
+
+--- switchConnectionStatus
+
+Responsible for managing the transition of connection status between users within
+the system. Regulates the state of connectivity, enabling users to switch
+their connection status, which can include actions like toggling between online and offline
+modes.
+
+--- getAllUsers
+
+Method is instrumental in obtaining an exhaustive list of all registered users within the
+system, facilitating user-related functionalities and data representation.
+
+--- getOnlineUsers
+
+Designed to retrieve a list of users currently active and connected within the platform.
+Specifically focuses on gathering the usernames of users who are currently
+marked as 'online' within the system.
+
+--- addUser
+
+Handles the addition of new users into the system.
+
+
+--- printCurrentPage
+
+Serves the purpose of generating and displaying the content of the current page based on
+the user's online status and the type of page they are viewing.
+
+--- changePage
+
+Facilitates navigation between available pages or sections within the platform.
+
+--- addAlbum
+
+Manages the addition of new albums to the platform, overseeing album creation.
+
+--- removeAlbum
+
+Handles the removal of an album belonging to a user. It validates the user's authority
+to delete the album by checking their ownership or association with the album's content,
+ensuring they are eligible for deletion. The method checks various conditions, such as
+associations between the user's audio collections, files, or songs and the album to be
+deleted. Upon successful verification, it removes the album from both the system and the
+user's collection. Finally, it confirms the successful deletion of the album or provides
+relevant failure messages if conditions aren't met.
+
+--- deleteUser
+
+Removes a user from the system based on their username. It performs various
+checks to ensure a secure deletion process:
+
+- Validates if the user has any ongoing connections or active content in the system
+that could prevent deletion.
+- Handles the removal of the user from playlists and songs they've liked.
+- Manages the decrement of follower counts for playlists.
+- Deletes user-associated data like songs created by the user.
+- Removes the user from the system's user lists (artists, normal users, hosts).
+- After executing these checks and deletion actions, the method confirms a successful
+deletion or indicates reasons for failure such as existing connections or the absence
+of the username in the system.
+
+--- showAlbums
+
+Displays available albums within the system.
+
+--- addEvent
+
+Adds new events to an artist's page, validating the event's date and ensuring it's unique
+to avoid duplicates. Upon receiving details like event name, owner, description, date, and
+timestamp, it confirms the date's validity. If the event name is unique, it adds the event
+to the artist's page, signaling success; otherwise, it returns an error for duplicate event
+names or invalid dates.
+
+--- removeEvent
+
+This method removes a specific event from an artist's page. Using the event name and owner as
+parameters, it searches for the event and removes it from the artist's page. If the event is
+found and successfully removed, it provides a success message; otherwise, it indicates that
+the event doesn't exist.
+
+--- addMerch
+
+Responsible for adding new merchandise to an artist's page, validates the merchandise's name
+before addition. It accepts merchandise details like name, owner, description, price, and
+timestamp, ensuring the name is unique before adding it to the artist's page. Upon successful
+addition, it confirms the merchandise's inclusion; otherwise, it notifies of a name clash with
+existing merchandise.
+
+--- addPodcast
+
+Adds a new podcast to the host's page. It processes the podcast details, validating
+for uniqueness based on the podcast name before adding it. The method assembles episodes and
+creates a new podcast instance. Upon validation, it adds the podcast to the system's podcast
+collection and the host's page.
+
+--- showPodcasts
+
+Displays available albums within the system.
+
+--- removePodcast
+
+Responsible for removing a podcast from the host's page, ensures that the user
+attempting removal is authorized. It checks for podcast ownership and availability before proceeding
+with removal, ensuring the user has the right to delete the podcast. If successful, it removes the
+podcast from both the system and the host's page.
+
+--- addAnnouncement
+
+Facilitates the addition of a new announcement to the host's page. It ensures
+uniqueness by verifying the announcement's name and adds it to the host's page collection. Upon
+successful addition, it confirms the announcement's inclusion; otherwise, it signals a clash due to an
+existing announcement with the same name.
+
+--- removeAnnouncement
+
+Designed to remove a specific announcement from the host's page. It checks for the
+existence of the announcement based on the provided name and then proceeds to remove it from the
+host's page collection. Upon successful removal, it confirms the deletion of the announcement.
+
+Notes:
+
+I used Singleton for the 'Admin', 'Statistics' and 'EventValidator' to maintain a single instance throughout the
+application. For the implementation, I utilized the skeleton provided by the team.
+
+

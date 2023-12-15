@@ -25,7 +25,8 @@ public class Announcement extends AudioCollection {
     }
 
     /**
-     * @return
+     * @return the number of tracks
+     * (always 0 for an announcement)
      */
     @Override
     public int getNumberOfTracks() {
@@ -33,8 +34,11 @@ public class Announcement extends AudioCollection {
     }
 
     /**
-     * @param index the index
-     * @return
+     * Retrieves the track at the specified index in the announcement.
+     *
+     * @param index The index of the track to retrieve.
+     * @return The AudioFile at the specified index
+     * (always null).
      */
     @Override
     public AudioFile getTrackByIndex(final int index) {
@@ -42,7 +46,8 @@ public class Announcement extends AudioCollection {
     }
 
     /**
-     * @return
+     * @return the list of songs from an announcement
+     * (always null)
      */
     @Override
     public ArrayList<Song> getSongs() {

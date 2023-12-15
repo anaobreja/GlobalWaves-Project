@@ -26,46 +26,43 @@ import java.util.List;
  */
 @Getter
 @Setter
-public final class Admin {
-    @Getter
-    private static List<String> names = new ArrayList<>();
-    @Getter
-    private static List<NormalUser> normalUsers = new ArrayList<>();
-    @Getter
-    @Setter
-    private static List<Artist> artists = new ArrayList<>();
-    @Getter
-    @Setter
-    private static List<Host> hosts = new ArrayList<>();
+public class Admin {
+    private List<String> names = new ArrayList<>();
+    private List<NormalUser> normalUsers = new ArrayList<>();
+    private List<Artist> artists = new ArrayList<>();
+    private List<Host> hosts = new ArrayList<>();
+    private List<Song> songs = new ArrayList<>();
+    private List<Podcast> podcasts = new ArrayList<>();
+    private List<Album> albums = new ArrayList<>();
+    private List<Event> events = new ArrayList<>();
+    private List<Merch> merchandise = new ArrayList<>();
 
-    //private static List<>
-    @Getter
-    private static List<Song> songs = new ArrayList<>();
-    @Getter
-    @Setter
-    private static List<Podcast> podcasts = new ArrayList<>();
-    @Getter
-    @Setter
-    private static List<Album> albums = new ArrayList<>();
-    @Getter
-    @Setter
-    private static List<Event> events = new ArrayList<>();
-    @Getter
-    @Setter
-    private static List<Merch> merches = new ArrayList<>();
+    private int timestamp = 0;
+    private final int LIMIT = 5;
 
-    private static int timestamp = 0;
-    private static final int LIMIT = 5;
+    private static Admin instance = null;
 
-    private Admin() { }
+    private Admin() {
+    }
 
+    /**
+     * Returns the instance of the Admin singleton class.
+     *
+     * @return The instance of the Admin class.
+     */
+    public static Admin getInstance() {
+        if (instance == null) {
+            instance = new Admin();
+        }
+        return instance;
+    }
 
     /**
      * Sets users.
      *
      * @param userInputList the user input list
      */
-    public static void setUsers(final List<UserInput> userInputList) {
+    public void setUsers(final List<UserInput> userInputList) {
         normalUsers = new ArrayList<>();
         for (UserInput userInput : userInputList) {
             normalUsers.add(new NormalUser(userInput.getUsername(),
@@ -74,15 +71,17 @@ public final class Admin {
         }
     }
 
+
     /**
+     * Adds a new user or artist/host based on the provided details.
      *
-     * @param username
-     * @param age
-     * @param city
-     * @param type
-     * @return
+     * @param username The username of the new user/artist/host to be added.
+     * @param age      The age of the new user/artist/host.
+     * @param city     The city of residence of the new user/artist/host.
+     * @param type     The type of user/artist/host ("user", "artist", "host").
+     * @return A string message indicating the success or failure of adding the user/artist/host.
      */
-    public static String addUser(final String username, final Integer age,
+    public String addUser(final String username, final Integer age,
                                  final String city, final String type) {
         for (String name : names) {
             if (name.equals(username)) {
@@ -117,7 +116,7 @@ public final class Admin {
      *
      * @param songInputList the song input list
      */
-    public static void setSongs(final List<SongInput> songInputList) {
+    public void setSongs(final List<SongInput> songInputList) {
         songs = new ArrayList<>();
         for (SongInput songInput : songInputList) {
             songs.add(new Song(songInput.getName(), songInput.getDuration(), songInput.getAlbum(),
@@ -132,7 +131,7 @@ public final class Admin {
      *
      * @param podcastInputList the podcast input list
      */
-    public static void setPodcasts(final List<PodcastInput> podcastInputList) {
+    public void setPodcasts(final List<PodcastInput> podcastInputList) {
         podcasts = new ArrayList<>();
         for (PodcastInput podcastInput : podcastInputList) {
             List<Episode> episodes = new ArrayList<>();
@@ -151,7 +150,7 @@ public final class Admin {
      *
      * @return the playlists
      */
-    public static List<Playlist> getPlaylists() {
+    public List<Playlist> getPlaylists() {
         List<Playlist> playlists = new ArrayList<>();
         for (NormalUser user : normalUsers) {
             playlists.addAll(user.getPlaylists());
@@ -165,7 +164,7 @@ public final class Admin {
      * @param username the username
      * @return the user
      */
-    public static NormalUser getUser(final String username) {
+    public NormalUser getUser(final String username) {
         for (NormalUser user : normalUsers) {
             if (user.getName().equals(username)) {
                 return user;
@@ -175,10 +174,10 @@ public final class Admin {
     }
 
     /**
-     * @param username
-     * @return
+     * @param username the username
+     * @return the name of the user
      */
-    public static String getName(final String username) {
+    public String getName(final String username) {
         for (String name : names) {
             if (name.equals(username)) {
                 return name;
@@ -188,10 +187,10 @@ public final class Admin {
     }
 
     /**
-     * @param username
-     * @return
+     * @param username the username
+     * @return the artist
      */
-    public static Artist getArtist(final String username) {
+    public Artist getArtist(final String username) {
         for (Artist artist : artists) {
             if (artist.getName().equals(username)) {
                 return artist;
@@ -201,10 +200,10 @@ public final class Admin {
     }
 
     /**
-     * @param username
-     * @return
+     * @param username the username
+     * @return the host
      */
-    public static Host getHosts(final String username) {
+    public Host getHost(final String username) {
         for (Host host : hosts) {
             if (host.getName().equals(username)) {
                 return host;
@@ -215,9 +214,11 @@ public final class Admin {
 
 
     /**
-     * @return
+     * Retrieves a list of currently active usernames.
+     *
+     * @return A list containing names of users currently online.
      */
-    public static ArrayList<String> getOnlineUsers() {
+    public ArrayList<String> getOnlineUsers() {
         ArrayList<String> onlineUsers = new ArrayList<>();
         for (NormalUser user : normalUsers) {
             if (user.isOnline()) {
@@ -228,9 +229,11 @@ public final class Admin {
     }
 
     /**
-     * @return
+     * Retrieves a list of all usernames.
+     *
+     * @return A list containing names of.
      */
-    public static ArrayList<String> getAllUsers() {
+    public ArrayList<String> getAllUsers() {
         ArrayList<String> users = new ArrayList<>();
 
         for (NormalUser user : normalUsers) {
@@ -253,7 +256,7 @@ public final class Admin {
      *
      * @param newTimestamp the new timestamp
      */
-    public static void updateTimestamp(final int newTimestamp) {
+    public void updateTimestamp(final int newTimestamp) {
         int elapsed = newTimestamp - timestamp;
         timestamp = newTimestamp;
         if (elapsed == 0) {
@@ -270,7 +273,7 @@ public final class Admin {
      *
      * @return the top 5 songs
      */
-    public static List<String> getTop5Songs() {
+    public List<String> getTop5Songs() {
         List<Song> sortedSongs = new ArrayList<>(songs);
         sortedSongs.sort(Comparator.comparingInt(Song::getLikes).reversed());
         List<String> topSongs = new ArrayList<>();
@@ -292,8 +295,8 @@ public final class Admin {
      *
      * @return the top 5 playlists
      */
-    public static List<String> getTop5Playlists() {
-        List<Playlist> sortedPlaylists = new ArrayList<>(getPlaylists());
+    public List<String> getTop5Playlists() {
+        List<Playlist> sortedPlaylists = new ArrayList<>(this.getPlaylists());
         sortedPlaylists.sort(Comparator.comparingInt(Playlist::getFollowers)
                 .reversed()
                 .thenComparing(Playlist::getTimestamp, Comparator.naturalOrder()));
@@ -310,10 +313,12 @@ public final class Admin {
     }
 
     /**
-     * @param username
-     * @return
+     * Deletes a user based on the given username.
+     *
+     * @param username The username of the user to be deleted.
+     * @return A string message indicating the success or failure of the deletion.
      */
-    public static String deleteUser(final String username) {
+    public String deleteUser(final String username) {
         User userToDelete;
 
         for (NormalUser userAux : normalUsers) {
@@ -408,7 +413,7 @@ public final class Admin {
     /**
      * Reset.
      */
-    public static void reset() {
+    public void reset() {
         normalUsers = new ArrayList<>();
         artists = new ArrayList<>();
         hosts = new ArrayList<>();

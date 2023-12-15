@@ -17,10 +17,6 @@ public final class Podcast extends AudioCollection {
         this.episodes = episodes;
     }
 
-    public List<Episode> getEpisodes() {
-        return episodes;
-    }
-
     @Override
     public int getNumberOfTracks() {
         return episodes.size();

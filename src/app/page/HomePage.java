@@ -12,8 +12,10 @@ public class HomePage extends Page {
     private final List<Playlist> followedPlaylists;
 
     /**
-     * @param likedSongs
-     * @param followedPlaylists
+     * Constructs a HomePage object with liked songs and followed playlists.
+     *
+     * @param likedSongs        The list of liked songs.
+     * @param followedPlaylists The list of followed playlists.
      */
     public HomePage(final List<Song> likedSongs,
                     final List<Playlist> followedPlaylists) {
@@ -22,12 +24,15 @@ public class HomePage extends Page {
     }
 
     /**
-     * @return
+     * Generates a formatted representation of the user's home page.
+     *
+     * @return A formatted string displaying liked songs and followed playlists.
      */
     @Override
     public String showPage() {
-        List<Song> songs = Statistics.getTopLikedSongs(likedSongs);
-        List<Playlist> playlists = Statistics.getTopFollowedPlaylists(followedPlaylists);
+        Statistics statistics = Statistics.getInstance();
+        List<Song> songs = statistics.getTopLikedSongs(likedSongs);
+        List<Playlist> playlists = statistics.getTopFollowedPlaylists(followedPlaylists);
 
         StringBuilder songNames = new StringBuilder();
         for (int i = 0; i < songs.size(); i++) {
