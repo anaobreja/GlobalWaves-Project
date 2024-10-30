@@ -1,3 +1,123 @@
+# Proiect GlobalWaves - Etapa 1 321 CA - Obreja Ana-Maria November, 2022
+
+The code provides functionality to manage and control audio content
+playback. It allows selection and loading of songs, podcasts, and
+playlists based on user commands. Functionalities include:
+
+Selection: Choosing specific audio content (songs, podcasts, or
+playlists) based on IDs or indices.
+
+Loading: Loading selected content for playback.
+Playback Control: Play, pause, skip forward/backward, and repeat
+functionalities for the selected content.
+
+Status Monitoring: Tracking playback status, remaining time, and
+handling repeat modes.
+
+Podcast-specific Features: Handling podcast-specific functionalities
+such as managing episodes and their playback.
+
+Commands:
+
+1. switchCommand
+
+The switchCommand function processes a sequence of commands to interact
+with a music library. It initializes and utilizes objects for various
+operations like search, selection, or loading based on the received
+command. It iterates through the command list, executes corresponding
+operations, generates associated command nodes, and adds them to the
+output collection (reading and write are performed based on JSON
+format). 
+
+2. Search
+
+Conducts a search based on the given command and library input.
+Depending on the command type (song, playlist, podcast), it searches
+and returns results accordingly.
+
+matchesFilters: Checks if a given song matches the specified filters
+in the command. It verifies if the song's attributes (name, album,
+genre, tags, lyrics, artist, release year) meet the filter criteria.
+
+2. select
+
+Processes the selection based on the given command, search result, and
+selection result. It handles the selection of songs, podcasts, or
+playlists based on the provided item ID. It prepares the selected
+item(s) for further operations.
+
+The select method in the Select class focuses on managing the
+selection process of songs, podcasts, or playlists based on the user's
+input and the available search results, ensuring appropriate messages
+and item selection within the bounds of the search results.
+
+3. load
+
+Loads content based on the given command and selection/result. It sets
+up the loaded content for playback, determining the type of content
+(songs, podcasts, playlists) and preparing it for further actions.
+
+playpause: Handles the play/pause functionality for loaded content.
+Adjusts the playback time for podcasts, handles pausing and resuming
+audio playback.
+
+status: Manages the status of the playback, including remaining time,
+current track, and paused status. Handles different repeat modes and
+adjusts remaining time accordingly.
+
+statusPlaylist: Handles the status specifically for playlists,
+considering different playback scenarios like repeat, skipping tracks,
+and managing the remaining time.
+
+repeat: Manages the repeat mode for the loaded content, altering the
+playback behavior based on the current repeat setting.
+
+next: Skips to the next track in the loaded content, updating the
+remaining time and informing about the current track.
+
+prev: Goes back to the previous track in the loaded content, updating
+the remaining time and informing about the current track.
+
+forward: Skips forward in a podcast episode, adjusting the remaining
+podcast time accordingly.
+
+backward: Rewinds backward in a podcast episode, adjusting the
+remaining podcast time accordingly.
+
+4. createPlaylist
+
+Creates a new playlist based on the provided command. It checks if a
+playlist with the same name already exists; if not, it creates a new
+playlist and adds it to the result.
+
+addRemoveInPlaylist: Handles adding or removing songs from a playlist
+based on the given command and the current loaded songs.
+
+like: Manages the liking or unliking of songs.
+
+showPreferredSongs: Retrieves songs that the user has liked. It
+generates a result containing songs that the user has marked as
+liked.
+
+showPlaylists: Displays playlists associated with the user. It filters
+the playlists based on the user and generates a result containing only
+the playlists belonging to that user.
+
+follow: Manages the following or unfollowing of playlists. It allows
+users to follow or unfollow a playlist and updates the follow-related
+information in the result.
+
+switchVisibility: Changes the visibility of a playlist. It modifies
+the visibility status of the specified playlist (public or private).
+
+The code quality isn't exceptional, and there's definitely room for
+improvement. However, my focus was on making the program run quickly
+and efficiently to meet the deadline. Comments are missing from the
+code, I relied on passing the test.
+
+
+
+
 # Proiect GlobalWaves - Etapa 2 321 CA - Obreja Ana-Maria Decembrie, 2022
 
 This project encompasses a comprehensive audio management system that
